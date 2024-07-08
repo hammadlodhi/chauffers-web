@@ -1,7 +1,8 @@
+"use client"
 import classNames from 'classnames';
 import React, {FC, ButtonHTMLAttributes, ReactNode} from 'react';
 import {LocalizedText} from '../LocalizedText';
-import {useRouter} from 'next/router';
+import {useRouter} from 'next/navigation';
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement>, LocalizedProps {
     variant?:

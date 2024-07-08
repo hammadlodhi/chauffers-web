@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/main.scss";
+import Header from "@/components/AppComponents/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <h1>Hello world</h1> */}
-        <h1>Header</h1>
+        <Header/>
         {children}
         <h1>whatsapp</h1>
         <h1>Footer</h1>

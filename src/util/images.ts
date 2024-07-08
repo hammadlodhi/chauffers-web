@@ -1,7 +1,6 @@
 // TAABEH
-export const logo = '/static/images/logo.png';
+export const logo = '/static/images/shauffers.png';
 export const groundImage = '/static/images/black.jpg';
-
 
 export const locationSvgPath = 'M256 0C153.755 0 70.573 83.182 70.573 ';
 export const getImageFile = async (arrayBuffer: string, fileName: string): Promise<File> => {
