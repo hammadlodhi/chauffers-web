@@ -1,0 +1,116 @@
+@mixin aspect($width: 16, $height: 9) {
+    $aspectRatio: calc($width / $height);
+    aspect-ratio: $aspectRatio;
+
+    @supports not (aspect-ratio: $aspectRatio) {
+        &::before {
+            content: '';
+            float: left;
+            padding-top: calc((#{$height} / #{$width}) * 100%);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+}
+
+$display: block, flex, grid, table, inline, inline-block, none, unset;
+$position: static, relative, absolute, fixed, sticky;
+$flexDirection: row, column, row-reverse, column-reverse;
+$alignItems: center, flex-start, flex-end, stretch;
+$justifyContent: center, flex-start, flex-end, space-between, space-around, space-evenly;
+
+@each $val in $display {
+    .dis-#{$val} {
+        display: $val;
+    }
+}
+
+@each $val in $position {
+    .pos-#{$val} {
+        position: $val;
+    }
+}
+@each $val in $alignItems {
+    .align-#{$val} {
+        align-items: $val;
+    }
+}
+
+@each $val in $justifyContent {
+    .jus-cont-#{$val} {
+        justify-content: $val;
+    }
+}
+
+@each $val in $flexDirection {
+    .flex-dir-#{$val} {
+        flex-direction: $val;
+    }
+}
+
+@for $i from 0 through 2000 {
+    .min-h-#{$i} {
+        min-height: $i * 1px;
+        &-i {
+            min-height: $i * 1px !important;
+        }
+    }
+    .min-w-#{$i} {
+        min-width: $i * 1px;
+        &-i {
+            min-width: $i * 1px !important;
+        }
+    }
+    .width-#{$i} {
+        width: $i * 1px;
+        &-i {
+            width: $i * 1px !important;
+        }
+        &-percent {
+            width: $i * 1%;
+            &-i {
+                width: $i * 1% !important;
+            }
+        }
+    }
+    .height-#{$i} {
+        height: $i * 1px;
+        &-i {
+            height: $i * 1px !important;
+        }
+        &-percent {
+            height: $i * 1%;
+            &-i {
+                height: $i * 1% !important;
+            }
+        }
+    }
+}
+
+@for $i from 0 through 100 {
+    .ul-offset-#{$i} {
+        text-underline-offset: $i * 1px;
+        &-i {
+            text-underline-offset: $i * 1px !important;
+        }
+    }
+}
+
+@for $i from 0 through 20 {
+    .flex-grow-#{$i} {
+        flex-grow: $i;
+        &-i {
+            flex-grow: $i !important;
+        }
+    }
+    .flex-shrink-#{$i} {
+        flex-shrink: $i;
+        &-i {
+            flex-shrink: $i !important;
+        }
+    }
+}

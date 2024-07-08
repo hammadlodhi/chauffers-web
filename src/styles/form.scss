@@ -1,0 +1,83 @@
+.form {
+    @extend .grid;
+    flex-grow: 1;
+    align-self: flex-start;
+    &>.large {
+        width: width(1);
+    }
+    &>.medium {
+        width: width(2);
+    }
+    &>.medium-large {
+        width: calc(66.66% - 6px);
+    }
+    &>.small {
+        width: width(3);
+    }
+    &>h2 {
+        color: $jungleGreen;
+    @extend .grid !optional;
+    & > .large {
+        width: width(1);
+    }
+    & > .medium {
+        width: width(2);
+    }
+    & > .small {
+        width: width(3);
+    }
+    & > h2 {
+        color: $black;
+        text-align: center;
+        font-weight: bold;
+        text-align: center;
+    }
+    &>h5 {
+        font-weight: bold;
+        border-bottom: $borderLightGray;
+        padding-bottom: size(4);
+        margin-top: size(3);
+        font-size: $fontXS;
+    }
+    &>button:last-child {
+        @extend .mg-h-auto;
+        margin-top: size(5);
+    }
+    @include max(md) {
+        &>.medium-large {
+            width: width(1);
+        }
+        &>.small {
+            width: width(2);
+        }
+    }
+    @include max(xs) {
+        &>.medium {
+            width: width(1);
+        }
+        &>.small {
+            width: width(1);
+        }
+        &>button:last-child {
+            width: 100%;
+            padding: size(2) 0;
+            margin-top: size(3);
+        }
+    }
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: size(3);
+    margin-top: size(5);
+    @include max(xs) {
+        flex-direction: column;
+        margin-top: size(3);
+        button {
+            width: 100%;
+            padding: size(2) 0;
+        }
+    }
+}
+}

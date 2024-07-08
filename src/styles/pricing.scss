@@ -1,0 +1,51 @@
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing * 5;
+    padding: $spacing * 5;
+    margin-top: $spacing * 25;
+    &--title {
+        color: $thunderbird;
+        font-weight: bold;
+    }
+    &--description {
+        font-weight: bold;
+        font-size: 16px;
+        color: $tundora;
+    }
+    &--tab {
+        margin-top: $spacing * 5;
+        font-size: 20px;
+        font-weight: bold;
+        width: auto;
+        display: flex;
+    }
+    &__subcrip-card {
+        display: flex;
+        flex-direction: row;
+        gap: $spacing * 5;
+        margin-top: $spacing * 5;
+    }
+    &--appointment {
+        margin-top: $spacing * 10;
+    }
+}
+
+@include max(sm) {
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__subcrip-card {
+            display: flex;
+            flex-direction: column;
+        }
+        &--description {
+            text-align: center;
+        }
+        &--tab {
+            flex-direction: column;
+        }
+    }
+}

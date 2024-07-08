@@ -1,0 +1,21 @@
+.error-page {
+    height: 458px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        color: $tundora;
+    }
+}
+
+@include max(md) {
+    .error-page {
+        height: 458px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            color: $tundora;
+        }
+    }
+}

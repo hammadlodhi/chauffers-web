@@ -1,0 +1,570 @@
+{
+    "LOGIN": {
+        "TITLE": "Log In",
+        "DESCRIPTION": "Discover a supportive community of online instructors. Get instant access to all course creation resources.",
+        "INPUT": {
+            "EMAIL": {
+                "LABEL": "Email",
+                "PLACEHOLDER": "Email",
+                "ERROR_TEXT": "Email is required"
+            },
+            "PASSWORD": {
+                "LABEL": "Password",
+                "PLACEHOLDER": "Password",
+                "ERROR_TEXT": "Password is required"
+            }
+        }
+    },
+    "SIGNUP": {
+        "TITLE": "Become a Daena Instructor!",
+        "DESCRIPTION": "Discover a supportive community of online instructors. Get instant access to all course creation resources.",
+        "TERMS_AND_CONDITION": "I agree with terms and conditions",
+        "INPUT": {
+            "NAME": {
+                "LABEL": "Name",
+                "PLACEHOLDER": "Name",
+                "ERROR_TEXT": "Name is required"
+            },
+            "EMAIL": {
+                "LABEL": "Email",
+                "PLACEHOLDER": "Email",
+                "ERROR_TEXT": "Email is required"
+            },
+            "PHONE": {
+                "LABEL": "Phone",
+                "PLACEHOLDER": "Phone",
+                "ERROR_TEXT": "Phone is required"
+            },
+            "PASSWORD": {
+                "LABEL": "Password",
+                "PLACEHOLDER": "Password",
+                "ERROR_TEXT": "Password is required"
+            },
+            "CONFIRM_PASSWORD": {
+                "LABEL": "Confirm password",
+                "PLACEHOLDER": "Confirm password",
+                "ERROR_TEXT": "Confirm password is required"
+            }
+        }
+    },
+    "FORGET_PASSWORD": {
+        "TITLE": "Forgot password",
+        "DESCRIPTION": "Discover a supportive community of online instructors. Get instant access to all course creation resources.",
+        "INPUT": {
+            "EMAIL": {
+                "LABEL": "Email",
+                "PLACEHOLDER": "Confirm email",
+                "ERROR_TEXT": "Email is required"
+            }
+        }
+    },
+    "INPUTS": {
+        "NAME": {
+            "LABEL": "Name",
+            "PLACEHOLDER": "Name",
+            "ERROR_TEXT": "Name is required"
+        },
+        "LAST_NAME": {
+            "LABEL": "Last name",
+            "PLACEHOLDER": "Last name",
+            "ERROR_TEXT": "Last name is required"
+        },
+        "FIRST_NAME": {
+            "LABEL": "First name",
+            "PLACEHOLDER": "First name",
+            "ERROR_TEXT": "First name is required"
+        },
+        "EMAIL": {
+            "LABEL": "Email",
+            "PLACEHOLDER": "Email",
+            "ERROR_TEXT": "Email is required"
+        },
+        "PHONE": {
+            "LABEL": "Phone",
+            "PLACEHOLDER": "Phone",
+            "ERROR_TEXT": "Phone is required"
+        },
+        "EXPERTISE": {
+            "LABEL": "Expertise",
+            "PLACEHOLDER": "Expertise",
+            "ERROR_TEXT": "Expertise is required"
+        },
+        "USER_NAME": {
+            "LABEL": "Username",
+            "PLACEHOLDER": "Username",
+            "ERROR_TEXT": "Username is required"
+        },
+        "PASSWORD": {
+            "LABEL": "Password",
+            "PLACEHOLDER": "Password",
+            "ERROR_TEXT": "Password is required"
+        },
+        "CONFIRM_PASSWORD": {
+            "LABEL": "Confirm password",
+            "PLACEHOLDER": "Confirm password",
+            "ERROR_TEXT": "Confirm password is required"
+        },
+        "PIN_CODE": {
+            "LABEL": "Pin code",
+            "PLACEHOLDER": "Pin code",
+            "ERROR_TEXT": "Pin code is required"
+        },
+        "ADDRESS": {
+            "LABEL": "Address",
+            "PLACEHOLDER": "Address",
+            "ERROR_TEXT": "Address is required"
+        },
+        "CITY": {
+            "LABEL": "City",
+            "PLACEHOLDER": "City",
+            "ERROR_TEXT": "City is required"
+        },
+        "COUNTRY": {
+            "LABEL": "Country",
+            "PLACEHOLDER": "Country",
+            "ERROR_TEXT": "Country is required"
+        },
+        "ABOUT_INFO": {
+            "LABEL": "About info",
+            "PLACEHOLDER": "About info",
+            "ERROR_TEXT": "About info is required"
+        },
+        "PERSONAL_WEBSITE": {
+            "LABEL": "Personal website",
+            "PLACEHOLDER": "Personal website",
+            "ERROR_TEXT": "Personal website is required"
+        },
+        "COURSE_NAME": {
+            "LABEL": "Course name",
+            "PLACEHOLDER": "Course name",
+            "ERROR_TEXT": "Course name is required"
+        },
+        "DESCRIPTION": {
+            "LABEL": "Description",
+            "PLACEHOLDER": "Description",
+            "ERROR_TEXT": "Description is required"
+        },
+        "CATEGORIES": {
+            "LABEL": "Categories",
+            "PLACEHOLDER": "Categories",
+            "ERROR_TEXT": "Categories is required"
+        },
+        "LANGUAGE": {
+            "LABEL": "language",
+            "PLACEHOLDER": "language",
+            "ERROR_TEXT": "language is required"
+        },
+        "PRICE": {
+            "LABEL": "Price (€)",
+            "PLACEHOLDER": "Price in €",
+            "ERROR_TEXT": "Price is required"
+        },
+        "LEVELS": {
+            "LABEL": "Levels",
+            "PLACEHOLDER": "Levels",
+            "ERROR_TEXT": "Levels is required"
+        },
+        "INTRO_VIDEO": {
+            "LABEL": "Intro video",
+            "PLACEHOLDER": "Drop video here or click to upload, Please add only .mp4, .mov or .mkv file",
+            "ERROR_TEXT": "Intro video is required"
+        },
+        "THUMBNAIL": {
+            "LABEL": "Thumbnail",
+            "PLACEHOLDER": "Drop image here or click to upload, Please add only .jpg, .jpeg or png file",
+            "ERROR_TEXT": "Thumbnail is required"
+        },
+        "SEARCH_TAGS": {
+            "LABEL": "Search tags",
+            "PLACEHOLDER": "Search tags",
+            "ERROR_TEXT": "Search tags is required"
+        },
+        "LESSON_NAME": {
+            "LABEL": "Lesson name",
+            "PLACEHOLDER": "Lesson name",
+            "ERROR_TEXT": "Lesson name is required"
+        },
+        "TITLE": {
+            "LABEL": "Title",
+            "PLACEHOLDER": "Title",
+            "ERROR_TEXT": "Title is required"
+        },
+        "UPLOAD_DOCUMENT": {
+            "LABEL": "Upload document",
+            "PLACEHOLDER": "Upload document, pdf only",
+            "ERROR_TEXT": "Upload document is required"
+        },
+        "UPLOAD_VIDEO": {
+            "LABEL": "Upload video",
+            "PLACEHOLDER": "Upload video, mp4, mov or mkv only",
+            "ERROR_TEXT": "Upload video is required"
+        }
+    },
+    "KEYWORDS": {
+        "LOGIN": "Login",
+        "SIGNUP": "Sign up",
+        "OR": "OR",
+        "SIGN_IN_WITH": "Sign in with",
+        "FORGOT_PASSWORD": "Forgot password",
+        "REMEMBER_ME": "Remember me",
+        "SEARCH": "Search",
+        "GENERAL": "General",
+        "OTHER_INFORMATION": "Other information",
+        "ONLINE_PRESENCE": "Online presence",
+        "SAVE_CHANGES": "Save changes",
+        "PROFILE_UPLOAD": "Profile upload",
+        "CHANGE_IMAGE": "Change image",
+        "UPLOAD_IMAGE": "Upload image",
+        "COURSE_VISIT": "Course visit",
+        "COURSE_SALE": "Course sale",
+        "ADD_LESSON": "Add Lesson",
+        "UPDATE_LESSON": "Update lesson",
+        "ADD_COURSE": "Add Course",
+        "UPDATE_COURSE": "Update Course",
+        "COURSE": "Course",
+        "ADD_SUB_LESSON": "Add sub lesson",
+        "CLOSE": "Close",
+        "SUBMIT": "Submit",
+        "UNKNOWN_API_ERROR": "Unknown error API",
+        "DAENA": "Daena",
+        "PAYMENT": "Payment",
+        "SUCCESSFUL": "Successful",
+        "UPDATE": "Update",
+        "CHANGE_PASSWORD": "Change password",
+        "MARK_ALL_READ": "Mark all as reads",
+        "NO_NOTIFICATION": "No notification yet",
+        "PUBLISH": "Publish",
+        "CANCEL": "Cancel",
+        "TERMS_AND_CONDITION": "Terms and conditions"
+    },
+    "SIDEBAR": {
+        "LINKS": {
+            "BUSINESS": "Business",
+            "USERS": "Users",
+            "LOCATION": "Location"
+        }
+    },
+
+    "SELECT": {
+        "DEFAULT_PLACEHOLDER": "Select"
+    },
+
+    "FILE_UPLOADER": {
+        "DEFAULT_PLACEHOLDER": "Upload a file"
+    },
+
+    "PROFILE_DROPDOWN": {
+        "PROFILE": "Profile",
+        "DASHBOARD": "Dashboard",
+        "LOGOUT": "Logout",
+        "NOTIFICATION": "Notifications",
+        "ADD_COURSE": "Add course"
+    },
+    "PRIVACY_POLICY": {
+        "BASIC_INFORMATION": {
+            "POINT-1": {
+                "TITLE": "1. Information We Collect",
+                "DETAIL-1": "When you choose to log in or sign up using Facebook, Google or directly through email."
+            },
+            "POINT-1-1": {
+                "TITLE": "1.1. Information You Provide",
+                "DETAIL-1": "When you use <Daena></Daena>, we may collect information you provide during the registration process, including but not limited to your name, email address, and other necessary contact information."
+            },
+            "POINT-1-2": {
+                "TITLE": "1.2. Facebook and Google Integration",
+                "DETAIL-1": "If you choose to log in or sign up using Facebook or Google, we may collect information from your Facebook or Google account as permitted by the respective social media platforms. This may include your name, email address, profile picture, and other relevant information."
+            },
+            "POINT-1-3": {
+                "TITLE": "1.3. Booking and Scheduling Information",
+                "DETAIL-1": "We collect information about your bookings, appointments, and scheduling preferences to provide you with the services you request."
+            }
+        },
+        "INFORMATION_USAGE": {
+            "TITLE": "2. How We Use Your Information",
+            "POINT-2-1": {
+                "TITLE": "2.1. Providing and Improving the Service",
+                "DETAIL-1": "We use the collected information to deliver and enhance our booking scheduling services, personalize your experience, and improve the functionality of our software."
+            },
+            "POINT-2-2": {
+                "TITLE": "2.2. Communication",
+                "DETAIL-1": "We may use your contact information to send you notifications, updates, and important information related to your bookings and our services."
+            },
+            "POINT-2-3": {
+                "TITLE": "2.3. Social Media Integration",
+                "DETAIL-1": "If you choose to connect your Facebook or Google account, we may use the provided information to facilitate social interactions within the software."
+            }
+        },
+        "INFORMATION_SHARE": {
+            "TITLE": "3. How We Share Your Information",
+            "POINT-3-1": {
+                "TITLE": "3.1. Third-Party Service Providers",
+                "DETAIL-1": "We may share your information with third-party service providers to assist us in delivering our services, including but not limited to payment processing, customer support, and technical infrastructure."
+            },
+            "POINT-3-2": {
+                "TITLE": "3.2. Legal Compliance",
+                "DETAIL-1": "We may disclose your information to comply with legal obligations, enforce our policies, respond to legal claims, or protect the rights, property, or safety of [Your Company Name], its users, or others."
+            }
+        },
+        "SECURITY": {
+            "TITLE": "4. Security Measures",
+            "DETAIL-1": "We take reasonable measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction. However, please note that no method of transmission over the internet or electronic storage is entirely secure."
+        },
+        "RIGHTS": {
+            "TITLE": "5. Your Choices and Rights",
+            "POINT-5-1": {
+                "TITLE": "5.1. Account Information",
+                "DETAIL-1": "You can update or correct your account information by accessing your account settings."
+            },
+            "POINT-5-2": {
+                "TITLE": "5.2. Opt-Out",
+                "DETAIL-1": "You can opt out of promotional communications by following the instructions in the messages you receive or by contacting us directly."
+            },
+            "POINT-5-3": {
+                "TITLE": "5.3. Account Deletion",
+                "DETAIL-1": "You have the right to delete your account at any time. Upon account deletion, we will permanently erase your personal information from our records, and no data will be retained."
+            }
+        },
+        "UPDATES": {
+            "TITLE": "6. Updates to this Privacy Policy",
+            "DETAIL-1": "We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this Privacy Policy periodically."
+        },
+        "CONTACT": {
+            "TITLE": "7. Contact Us",
+            "DETAIL-1": "If you have any questions or concerns about our Privacy Policy, please contact us at contact@daena.com."
+        },
+        "DETAIL-1": "Thank you for using <Daena></Daena>! This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you use our booking scheduling software.",
+        "DETAIL-2": "Thank you for using <Daena></Daena>!",
+        "TITLE": "Privacy policy"
+    },
+    "TERMS_AND_CONDITION": {
+        "ACCEPTANCE_OF_TERMS": {
+            "POINT-1": {
+                "TITLE": "1. Acceptance of Terms",
+                "DETAIL-1": "By accessing and using the Daena App (hereinafter referred to as the platform), you agree to comply with and be bound by the following terms and conditions. If you do not agree with these terms, please do not use the platform."
+            }
+        },
+        "USER_ACCOUNTS": {
+            "TITLE": "2. User Accounts",
+            "POINT-2-1": {
+                "TITLE": "2.1. Teachers",
+                "DETAIL-1": "a.   Teachers must create an account to upload and manage their courses.",
+                "DETAIL-2": "b.   Teachers are responsible for the accuracy of the course content and must ensure it complies with applicable laws and regulations."
+            },
+            "POINT-2-2": {
+                "TITLE": "2.2. Students",
+                "DETAIL-1": "a.   Students must create an account to purchase and access courses.",
+                "DETAIL-2": "b.   Students are responsible for maintaining the confidentiality of their account information"
+            }
+        },
+        "COURSE_UPLOAD": {
+            "TITLE": "3. Course Upload and Ownership",
+            "POINT-3-1": {
+                "TITLE": "3.1. Teachers",
+                "DETAIL-1": "a.   Teachers retain ownership of the courses they upload.",
+                "DETAIL-2": "b.   By uploading a course, teachers grant the platform a non-exclusive license to display, distribute, and promote the course."
+            },
+            "POINT-3-2": {
+                "TITLE": "3.2. Students",
+                "DETAIL-1": "a.   Students have a non-transferable license to access and view purchased courses for personal use only."
+            }
+        },
+        "PAYMENT_AND_FEES": {
+            "TITLE": "4. Payment and Fees",
+            "POINT-4-1": {
+                "TITLE": "4.1. Teachers",
+                "DETAIL-1": "a.   Teachers may set the price for their courses.",
+                "DETAIL-2": "b.   The platform retains a percentage of each transaction as a service fee."
+            },
+            "POINT-4-2": {
+                "TITLE": "4.2. Students",
+                "DETAIL-1": "a.   Students agree to pay the specified course fee at the time of purchase.",
+                "DETAIL-2": "b.   All payments are processed securely through the platform's designated payment gateway."
+            }
+        },
+        "REFUND_POLICY": {
+            "TITLE": "5. Refund Policy",
+            "POINT-5-1": {
+                "TITLE": "5.1. Teachers",
+                "DETAIL-1": "a.   Teachers are responsible for setting their refund policies.",
+                "DETAIL-2": "b.   Teachers must adhere to their specified refund policies."
+            },
+            "POINT-5-2": {
+                "TITLE": "5.2. Students",
+                "DETAIL-1": "a.   Students must review and agree to the refund policy before making a purchase.",
+                "DETAIL-2": "b.   Refund requests are subject to the teacher's policy."
+            }
+        },
+        "PROHIBITED_CONDUCT": {
+            "TITLE": "6. Prohibited Conduct",
+            "POINT-6-1": {
+                "DETAIL-1": "a.  Users are prohibited from engaging in any unlawful, abusive, or harmful behavior on the platform."
+            },
+            "POINT-6-2": {
+                "DETAIL-1": "b.  Users must not attempt to circumvent or manipulate the platform's features, security, or payment systems."
+            }
+        },
+        "TERMINATION": {
+            "TITLE": "7. Termination",
+            "POINT-7-1": {
+                "DETAIL-1": "a.  The platform reserves the right to terminate or suspend any user account for violation of these terms."
+            },
+            "POINT-7-2": {
+                "DETAIL-1": "b.  Termination may result in the removal of uploaded content."
+            }
+        },
+        "MODIFICATION_OF_TERMS": {
+            "TITLE": "8. Modification of Terms",
+            "POINT-8-1": {
+                "DETAIL-1": "a.  The platform reserves the right to modify these terms at any time."
+            },
+            "POINT-8-2": {
+                "DETAIL-1": "b.  Users will be notified of any changes, and continued use of the platform constitutes acceptance of the modified terms."
+            }
+        },
+        "LIMITATION_OF_LIABILITY": {
+            "TITLE": "9. Limitation of Liability",
+            "POINT-9-1": {
+                "DETAIL-1": "a.  The platform is not liable for any direct, indirect, incidental, or consequential damages resulting from the use of the platform."
+            },
+            "POINT-9-2": {
+                "DETAIL-1": "By using the Daena, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you have any questions or concerns, please contact [contact@daena.com]."
+            }
+        },
+        "TITLE": "Terms and Condition"
+    },
+    "FAQS": {
+        "TITLE": "Frequently Asked Question",
+        "TEACHERS": {
+            "TITLE": "1. Teachers:",
+            "Q1": {
+                "QUESTION": "Q: How can I create a teacher account?",
+                "ANSWER": "A: To create a teacher account, click on the 'Sign Up' button and Follow the prompts to complete the registration process."
+            },
+            "Q2": {
+                "QUESTION": "Q: How do I upload a course?",
+                "ANSWER": "A: Once logged in, navigate to your dashboard and click on the 'Upload Course' option. Follow the instructions to fill in the course details, upload content, and set the pricing."
+            },
+            "Q3": {
+                "QUESTION": "Q: Can I edit or update my course after uploading it?",
+                "ANSWER": "A: Yes, you can edit and update your course information at any time from your dashboard."
+            }
+        },
+        "STUDENTS": {
+            "TITLE": "2. Students:",
+            "Q1": {
+                "QUESTION": "Q: How can I create a student account?",
+                "ANSWER": "A: Click on the Sign Up button and select the option for students. Fill in the required information to create your account."
+            },
+            "Q2": {
+                "QUESTION": "Q: How do I purchase a course?",
+                "ANSWER": "A: Once logged in, browse through the available courses, select the one you want, and click on the Buy Now button. Follow the payment instructions to complete the purchase."
+            },
+            "Q3": {
+                "QUESTION": "Q:  Is there a refund policy for courses?",
+                "ANSWER": "A: No. It's an MVP phase we will have the refund policy for the next phases. "
+            },
+            "Q4": {
+                "QUESTION": "Q: Can I access my purchased courses from different devices?",
+                "ANSWER": "A: You can access your purchased courses from any device by logging in with your account credentials."
+            },
+            "Q5": {
+                "QUESTION": "Q: How Can I delete my account?",
+                "ANSWER": "A: Open profile from the below navigation bar and then click to the delete account button. Click yes to delete account."
+            }
+        },
+        "GENERAL": {
+            "TITLE": "3. General:",
+            "Q1": {
+                "QUESTION": "Q: How is my payment information secured?",
+                "ANSWER": "A: We use a secure payment gateway to process all transactions. Your payment information is encrypted and stored securely."
+            },
+            "Q2": {
+                "QUESTION": "Q: What if I encounter technical issues with the platform?",
+                "ANSWER": "A: If you experience technical issues, please contact our support team at [support@daena.dev] for assistance."
+            },
+            "Q3": {
+                "QUESTION": "Q: How often are these terms and conditions updated?",
+                "ANSWER": "A: The terms and conditions may be updated periodically. Users will be notified of any changes, and continued platform use constitutes acceptance of the modified terms."
+            },
+            "Q4": {
+                "QUESTION": "Q: How can I contact customer support?",
+                "ANSWER": "A: For any inquiries or assistance, please reach out to our customer support team at [support@daena.dev]."
+            },
+            "Q5": {
+                "QUESTION": "Q: Can I share my account with others?",
+                "ANSWER": "A: No, sharing accounts is not allowed. Each account is intended for individual use only."
+            }
+        }
+    },
+    "SEO": {
+        "BUSINESS": "Business",
+        "LOCATIONS": "Locations",
+        "USERS": "Users",
+        "DASHBOARD": "Dashboard",
+        "FAQ": "Faq",
+        "FORGOT_PASSWORD": "Forgot password",
+        "ACCOUNT": "Account",
+        "PRIVACY_POLICY": "Privacy Policy",
+        "SIGN_UP": "Sign up",
+        "SUCCESS": "Payment Successful",
+        "TERMS_AND_CONDITIONS": "Terms and Conditions",
+        "PLACEFINDER": "Placefindr",
+        "ERROR_PAGE": {
+            "TITLE": "Error"
+        }
+    },
+    "ERROR_PAGE": {
+        "REQUEST_FAILED": {
+            "HEADING": "Session expired",
+            "DESCRIPTION": "You are logged out"
+        },
+        "PAGE_NOT_FOUND": {
+            "HEADING": "Page not found",
+            "DESCRIPTION": "Something is wrong"
+        }
+    },
+    "FILTER_DROPDOWN": {
+        "THIS_YEAR": "This year",
+        "THIS_MONTH": "This month",
+        "THIS_WEEK": "This week",
+        "TODAY": "Today",
+        "ALL": "All",
+        "PLACEHOLDER": "Select time"
+    },
+    "BUSINESS": {
+        "TITLE": "Business",
+        "ADD_BUSINESS": "Add business"
+    },
+    "LOCATION": {
+        "TITLE": "Location",
+        "ADD_COUNTRY": "Add country"
+    },
+    "USERS": {
+        "TITLE": "Users",
+        "ADD_ADMIN": "Add admin"
+    },
+    "REGIONS": {
+        "TITLE": "Regions",
+        "ADD_REGION": "Add region"
+    },
+    "MUNICIPALITY": {
+        "TITLE": "Municipality",
+        "ADD_MUNICIPILATY": "Add municipality"
+    },
+    "CITY": {
+        "TITLE": "Cities",
+        "ADD_CITY": "Add city"
+    },
+    "NEIGHBORHOOD": {
+        "TITLE": "Neighborhood",
+        "ADD_NEIGHBORHOOD": "Add neighborhood"
+    },
+    "TRAIN_STATIONS": {
+        "TITLE": "Train Stations",
+        "ADD_TRAIN_STATIONS": "Add train station"
+    },
+    "PAGINATION": {
+        "NEXT": "Next",
+        "PREV": "Previous"
+    }
+}

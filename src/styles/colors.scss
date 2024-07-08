@@ -1,0 +1,184 @@
+$vermilion: #f63b00;
+$mineShaft: #313131;
+$concrete: #f2f2f2;
+$hoverColor: rgba(246, 59, 0, 0.3);
+
+$darkGray: #002332;
+$darkest: #000710;
+$skyBlue: #02939c;
+$white: #ffffff;
+$black: #000000;
+$red: #ff0000;
+$blue: #3c5071;
+$Tundora: #e9e9e9;
+$sandwisp: #f3f0ac;
+$SilverChalice: #a3a3a3;
+$zircon: #f1f6ff;
+$mercury: #e9e9e9;
+$eastBay: #3c5071;
+$cobalt: #0548b7;
+$solitude: #e4efff;
+$chateauGreen: #48ae4d;
+$feta: #e9fdea;
+$sanguineBrown: #903a3f;
+$minsk: #4b2d87;
+$electricViolet: #5417ff;
+$moonRaker: #ede4fa;
+$persianRed: #c52b2b;
+$yourPink: #fec1c1;
+$selago: #efe9fb;
+$linkBlue: #00368e;
+$gray: #c4c4c4;
+$wePeep: #f9e7e8;
+$selago: #efe9fb;
+$polar: #dbf5f7;
+$hawkesBlue: #e9f1fd;
+$outerSpace: #060d14;
+$vesuvius: #b1470d;
+$gainsboro: #e7e7e7;
+$jungleGreen: #34b771;
+$zest: #e67d18;
+$silver: #bdbdbd;
+$doveGrey: #636363;
+$endeavour: #00609f;
+$hotCinnamon: #d96e21;
+$lightGrey: #dadada8f;
+$hotCinnamon: #d96e21;
+$hintOfRed: #f5f2f2;
+$grey1: #808080;
+$grey2: #808080;
+$grey3: #707070;
+$grey4: #f1f1f1;
+$darkGrey: #484848;
+$shark: #262a2e;
+$lighBlack: #00000077;
+$tundora: #484848;
+$thunderbird: #c51a1f;
+$buttercup: #f69f1c;
+$subCard1: #ffaa00;
+$subCard2: $thunderbird;
+$subCard3: #a31ac5;
+$subCard4: #1ac5c5;
+$flirt: #be029f;
+$electricViolet: #af23ff;
+$electricBlue: #4e3aff;
+$jade: #00b14d;
+$java: #1aaec5;
+$greenLight: #08e200;
+$rioGrande: #a4de00;
+$keyLimePie: #bfc51a;
+$geebung: #c58c1a;
+$brownLight: #973800;
+$orient: #00568f;
+$silverChalice: #a9a9a9;
+
+$colors: (
+    white: $white,
+    Buttercup: $buttercup,
+    black: $black,
+    tundora: $tundora,
+    thunderbird: $thunderbird,
+    flirt: $flirt,
+    electricViolet: $electricViolet,
+    electricBlue: $electricBlue,
+    orient: $orient,
+    java: $java,
+    jade: $jade,
+    rioGrande: $rioGrande,
+    keyLimePie: $keyLimePie,
+    geebung: $geebung,
+    brownLight: $brownLight,
+    red: #db4437,
+    green: #0f9d58,
+    greenLight: $greenLight,
+    polar: $polar,
+    wePeep: $wePeep,
+    selago: $selago,
+    hawkesBlue: $hawkesBlue,
+    vermilion: #f63b00,
+);
+
+$defaultColor: #0f9d58;
+
+@function getColor($colorName) {
+    @if not map-has-key($colors, $colorName) {
+        $colors: map-merge(
+            $colors,
+            (
+                $colorName: $defaultColor,
+            )
+        );
+    }
+    @return map-get($colors, $colorName);
+}
+
+// @each $colorName, $color in $colors {
+//     div[color='#{$color}'] {
+//         background-color: rgba($color, 0.1);
+//         padding: 10px;
+//         color: $tundora;
+//         text-align: left;
+//     }
+
+//     div[color='#{$color}']::before {
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 5px;
+//         height: 100%;
+//         background-color: $color;
+//         border-top-left-radius: 4px;
+//         border-bottom-left-radius: 4px;
+//     }
+
+//     .txt-#{$colorName} {
+//         color: $color;
+//         &-i {
+//             color: $color !important;
+//         }
+//     }
+//     .bg-#{$colorName} {
+//         background-color: $color;
+//         &-i {
+//             background-color: $color !important;
+//         }
+//     }
+// }
+
+@each $colorName, $color in $colors {
+    // Check if color exists, else use default color
+    $currentColor: getColor($colorName);
+
+    div[color='#{$currentColor}'] {
+        background-color: rgba($currentColor, 0.1);
+        padding: 10px;
+        color: $tundora;
+        text-align: left;
+    }
+
+    div[color='#{$currentColor}']::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: $currentColor;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .txt-#{$colorName} {
+        color: $currentColor;
+        &-i {
+            color: $currentColor !important;
+        }
+    }
+    .bg-#{$colorName} {
+        background-color: $currentColor;
+        &-i {
+            background-color: $currentColor !important;
+        }
+    }
+}

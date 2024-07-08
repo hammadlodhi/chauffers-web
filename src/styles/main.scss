@@ -1,0 +1,22 @@
+//Importing general css
+@import 'react-toastify/dist/ReactToastify.css';
+@import 'react-phone-input-2/lib/style.css';
+
+@import 'reset.scss';
+@import 'colors.scss';
+@import 'media.scss';
+@import 'spacing.scss';
+@import 'box-shadow.scss';
+@import 'borders.scss';
+@import 'error.scss';
+@import 'fonts.scss';
+@import 'form.scss';
+@import 'global.scss';
+@import 'grid.scss';
+@import 'pricing.scss';
+@import 'utils.scss';
+@import 'z-indices.scss';
+
+//importing component css
+@import '../components/UIComponents/UIComponents';
+// @import '../components/AppComponents/AppComponents';
