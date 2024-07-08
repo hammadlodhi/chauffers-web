@@ -1,0 +1,14 @@
+export const defaultSelectPlaceholder = 'SELECT.DEFAULT_PLACEHOLDER';
+export const defaultSelectHelpText = 'SELECT.DEFAULT_HELP_TEXT';
+export const defaultInputPlaceholder = 'LOCALIZED_INPUT.DEFAULT_PLACEHOLDER';
+export const defaultInputHelpText = 'LOCALIZED_INPUT.DEFAULT_HELP_TEXT';
+export const defaultTextAreaPlaceholder = 'TEXT_AREA.DEFAULT_PLACEHOLDER';
+export const defaultTextAreaHelpText = 'TEXT_AREA.DEFAULT_HELP_TEXT';
+export const defaultFileUploaderPlaceholder = 'FILE_UPLOADER.DEFAULT_PLACEHOLDER';
+export const defaultFileUploaderHelpText = 'FILE_UPLOADER.DEFAULT_HELP_TEXT';
+export const defaultImageUploaderPlaceholder = 'IMAGE_UPLOADER.DEFAULT_PLACEHOLDER';
+export const defaultImageUploaderHelpText = 'IMAGE_UPLOADER.DEFAULT_HELP_TEXT';
+export const defaultAutoCompleteAddressPlaceholder = 'AUTOCOMPLETE_ADDRESS.DEFAULT_PLACEHOLDER';
+export const defaultAutoCompleteAddressHelpText = 'AUTOCOMPLETE_ADDRESS.DEFAULT_HELP_TEXT';
+export const defaultPhoneInputHelpText = 'PHONE_INPUT.DEFAULT_HELP_TEXT';
+export const defaultPhoneInputPlaceholder = 'PHONE_INPUT.DEFAULT_PLACEHOLDER';

@@ -1,0 +1,10 @@
+.multiple-checkboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    @include max(sm) {
+        flex-direction: column;
+    }
+}

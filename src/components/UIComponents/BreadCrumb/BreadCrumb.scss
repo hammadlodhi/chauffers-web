@@ -1,0 +1,20 @@
+.bread-crumb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    button {
+        background-color: unset;
+        color: #f63b00;
+        padding: unset;
+        margin: unset;
+        width: fit-content;
+        span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    svg {
+        width: 20px;
+        fill: #f63b00;
+    }
+}

@@ -1,0 +1,56 @@
+.burger-menu {
+    @extend .icon-button;
+    display: none;
+    padding: 0;
+    border-radius: $spacing;
+    margin: 0;
+    background: none;
+    border: none;
+    &__icon {
+        width: 15px;
+        height: 13px;
+        position: relative;
+        cursor: pointer;
+        &__bar {
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: rgba($eastBay, 0.9);
+            left: 0;
+            transition: all 0.2s ease-in-out;
+            &:first-child {
+                top: 0px;
+                transform-origin: left center;
+            }
+
+            &:nth-child(2) {
+                top: 6px;
+                transform-origin: left center;
+            }
+
+            &:last-child {
+                top: 12px;
+                transform-origin: left center;
+            }
+        }
+    }
+    &.cross .burger-menu__icon .burger-menu__icon__bar {
+        &:first-child {
+            transform: rotate(45deg);
+            top: 0px;
+            left: 0px;
+        }
+        &:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+        }
+        &:last-child {
+            transform: rotate(-45deg);
+            top: 11px;
+            left: 0px;
+        }
+    }
+    @include max(md) {
+        display: block;
+    }
+}

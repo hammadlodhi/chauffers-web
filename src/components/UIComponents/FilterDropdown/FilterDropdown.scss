@@ -1,0 +1,9 @@
+.filter-dropdown {
+    & .dropdown {
+        width: 100px;
+        border: none;
+    }
+    & .dropdown__head {
+        padding: 0;
+    }
+}

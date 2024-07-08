@@ -1,0 +1,114 @@
+.popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: $mediumIndex;
+
+    &__container {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        max-height: 90%;
+        width: fit-content;
+        width: 600px;
+        // border-radius: size(2);
+        box-shadow: $popupShadow;
+        position: relative;
+        background-color: white;
+        cursor: auto;
+        padding: size(5);
+        .service-form {
+            padding: 30px !important;
+        }
+        & > button:last-child {
+            @extend .mg-h-auto;
+            margin-top: size(3);
+            border-radius: size(1);
+        }
+    }
+    &__close-button {
+        // position: absolute;
+        // right: 42px;
+        // top: 53px;
+
+        svg {
+            width: size(5);
+            path {
+                fill: $grey1;
+            }
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &.default {
+        .popup__container {
+            border-radius: size(4);
+            max-width: size(120);
+            padding: size(8);
+            margin: 0 size(5);
+
+            & > h3:first-child {
+                text-transform: none;
+                letter-spacing: normal;
+                color: $jungleGreen;
+                font-weight: bold;
+                margin-bottom: size(5);
+            }
+            & > p {
+                font-size: $fontXS;
+                text-align: center;
+                &:last-of-type {
+                    padding-bottom: size(2);
+                    border-bottom: $borderBottomOuterSpace;
+                }
+            }
+        }
+    }
+    &.highlight {
+        .popup__container > div:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & > h3:first-child {
+                font-weight: bold;
+                line-height: 1;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: size(2);
+            }
+        }
+    }
+    &.pointed .popup__container {
+        padding: 24px;
+        & > h3 {
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+@include max(sm) {
+    .popup {
+        // height: calc(100vh - size(12));
+        height: 100vh;
+    }
+}
+
+@include max(xs) {
+    .popup_container {
+        & > button:last-child {
+            width: 100%;
+            padding: size(2) 0;
+            margin-top: size(2);
+            border-radius: size(1);
+        }
+    }
+}

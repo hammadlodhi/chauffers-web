@@ -1,0 +1,24 @@
+.category-filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    padding-block: 10px;
+
+    button {
+        span {
+            font-size: 14px;
+        }
+    }
+
+    &__selected {
+        color: #f63b00;
+        border-bottom: 2px solid #f63b00;
+        span {
+            font-weight: 600;
+        }
+    }
+}

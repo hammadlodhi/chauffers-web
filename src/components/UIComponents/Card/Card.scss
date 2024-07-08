@@ -1,0 +1,76 @@
+.card {
+    background-color: white;
+    padding: size(4) size(5);
+    border-radius: size(2);
+    display: flex;
+    flex-direction: column;
+    gap: size(4);
+    &__children {
+        -moz-transition: all 2s ease-in-out;
+        -webkit-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+    }
+    &__expand {
+        height: auto !important;
+    }
+    &__contract {
+        height: 0;
+        overflow: hidden;
+    }
+    &__title {
+        color: #313131;
+    }
+    &__border-bottom {
+        border-bottom: 1px solid #313131;
+        padding-bottom: 20px;
+    }
+
+    &__title-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__filter-container {
+        display: flex;
+        gap: size(3);
+        & .form-field-container {
+            display: flex;
+            align-items: center;
+            & .form-field {
+                display: flex;
+                & .radio-buttons__option {
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    label {
+                        color: $eastBay;
+                    }
+                    input {
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+            }
+        }
+        & .localized-button {
+            flex-direction: row-reverse;
+            border: none;
+            background-color: $white;
+            &--icon {
+                gap: size(2);
+            }
+            span {
+                color: $eastBay;
+            }
+        }
+    }
+    & .detail-card-list {
+        display: flex;
+        flex-direction: column;
+        gap: size(2.5);
+        & .detail-card {
+            padding: 0;
+        }
+    }
+}

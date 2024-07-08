@@ -1,0 +1,22 @@
+.localized-checkbox {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 220px;
+    align-items: center;
+    user-select: none;
+    gap: 10px;
+    label {
+        span {
+            font-size: 14px;
+        }
+    }
+
+    input {
+        transform: scale(1.4);
+        accent-color: #f63b00;
+        border: 2px solid #f63b00;
+    }
+    input:checked {
+        border-color: blue; /* Border color when checked */
+    }
+}
