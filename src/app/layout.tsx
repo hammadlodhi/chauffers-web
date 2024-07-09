@@ -17,11 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header/>
-        {children}
-        <h1>whatsapp</h1>
-        <h1>Footer</h1>
+      <body style={{backgroundColor: "black"}} className={inter.className}>
+        <Header />
+        <div style={{ paddingTop: "115px" }}>{children}</div>
+        {/* <h1>whatsapp</h1>
+        <h1>Footer</h1> */}
       </body>
     </html>
   );

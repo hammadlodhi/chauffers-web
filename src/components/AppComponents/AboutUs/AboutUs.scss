@@ -1,0 +1,18 @@
+.about{
+    background-image: url("/static/images/background.png");
+    &__heading {
+        font-size: $fontXL;
+        color: $white;
+    }
+    &__body {
+        display: flex;
+        gap: 60px;
+    }
+    &__para1 {
+        color: $white;
+        font-size: 14px;
+    }
+    &__car7 {
+        width: 320px;
+    }
+}

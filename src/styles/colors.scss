@@ -71,6 +71,7 @@ $geebung: #c58c1a;
 $brownLight: #973800;
 $orient: #00568f;
 $silverChalice: #a9a9a9;
+$gold: #ffd700;
 
 $colors: (
     white: $white,
@@ -181,4 +182,12 @@ $defaultColor: #0f9d58;
             background-color: $currentColor !important;
         }
     }
+}
+
+.white {
+    color: $white;
+}
+
+.gold {
+    color: $gold;
 }

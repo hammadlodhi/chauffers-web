@@ -1,0 +1,21 @@
+.services{
+    background-image: url("/static/images/background.png");
+    &__heading {
+        font-size: $fontXL;
+        color: $white;
+    }
+    &__body {
+        text-align: center;
+    }
+    &__para1 {
+        color: $white;
+        font-size: 14px;
+    }
+    &__car7 {
+        width: 320px;
+    }
+    &__img2 {
+        width: 1000px;
+    }
+
+}

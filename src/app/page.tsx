@@ -1,13 +1,13 @@
-import styles from "./page.module.css";
+import AboutUs from "@/components/AppComponents/AboutUs/AboutUs";
+import HomePage from "@/components/AppComponents/Home/Home";
+import OurServices from "@/components/AppComponents/OurServices/OurServices";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-        </p>
-      </div>
-    </main>
+    <div>
+      <HomePage />
+      <AboutUs />
+      <OurServices />
+    </div>
   );
 }
