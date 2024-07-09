@@ -1,20 +1,22 @@
+@import 'src/styles/colors.scss';
+
 .burger-menu {
-    display: none;
-    padding: 0;
-    border-radius: $spacing;
-    margin: 0;
-    background: none;
-    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 4px;
+    &:hover {
+        opacity: 1;
+    }
     &__icon {
-        width: 15px;
-        height: 13px;
+        width: 20px;
+        height: 17px;
         position: relative;
         cursor: pointer;
-        &__bar {
+        &-bar {
             position: absolute;
-            height: 1px;
+            height: 3px;
             width: 100%;
-            background: rgba($eastBay, 0.9);
+            background: $white;
             left: 0;
             transition: all 0.2s ease-in-out;
             &:first-child {
@@ -33,23 +35,24 @@
             }
         }
     }
-    &.cross .burger-menu__icon .burger-menu__icon__bar {
-        &:first-child {
-            transform: rotate(45deg);
-            top: 0px;
-            left: 0px;
+    &--cross {
+        .burger-menu__icon {
+            &-bar {
+                &:first-child {
+                    transform: rotate(45deg);
+                    top: 0px;
+                    left: 0px;
+                }
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                    top: 11px;
+                    left: 0px;
+                }
+            }
         }
-        &:nth-child(2) {
-            width: 0%;
-            opacity: 0;
-        }
-        &:last-child {
-            transform: rotate(-45deg);
-            top: 11px;
-            left: 0px;
-        }
-    }
-    @include max(md) {
-        display: block;
     }
 }
