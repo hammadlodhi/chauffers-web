@@ -1,0 +1,31 @@
+.footer {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__icon {
+    background-color: rgb(255, 255, 255);
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include max(sm) {
+    .footer {
+      flex-direction: column;
+    }
+  }
+}
