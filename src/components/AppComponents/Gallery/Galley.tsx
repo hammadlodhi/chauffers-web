@@ -5,38 +5,46 @@ import {
   Typography,
   Card,
   CardActionArea,
-  CardMedia,
 } from "@mui/material";
 import Data from "./Data.json";
 
 const Galley = () => {
   return (
-    <div className="services layout-width">
-      <h1 className="services__heading mg-t-15">OUR GALLERY</h1>
+    <div className="gallery layout-width">
+      <h1 className="gallery__heading mg-t-15">OUR GALLERY</h1>
       <hr />
-      <div className="services__body mg-t-10">
+      <div className="gallery__body mg-t-10">
         <Grid container spacing={5}>
           {Data.map((result, index) => (
             <Grid item xs={12} sm={4} key={index}>
               <Card
                 sx={{ maxWidth: 345 }}
-                style={{ padding: "10px", marginBottom: "30px" }}
+                style={{
+                  padding: "10px",
+                  marginBottom: "30px",
+                  backgroundColor: "black",
+                  border: "1px solid #dac06c",
+                }}
               >
                 <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image={result.img}
-                    style={{ borderRadius: "5px" }}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                  <img className="gallery__img" height="184" src={result.img} />
+                  <CardContent style={{ textAlign: "left" }}>
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      component="div"
+                      style={{
+                        color: "white",
+                      }}
+                    >
                       {result.title}
                     </Typography>
                     <Typography
+                      className="gallery__description"
                       gutterBottom
                       variant="body2"
                       color="text.secondary"
+                      style={{ color: "white" }}
                     >
                       {result.des}
                     </Typography>
