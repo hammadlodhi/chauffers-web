@@ -17,5 +17,14 @@
     &__img2 {
         width: 1000px;
     }
-
 }
+@include max(md) {
+    .services__body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }    
+    .services__img2 {
+      width: 100%;
+    }
+  }

@@ -1,4 +1,4 @@
-// TAABEH
+// CHAUFFER
 export const logo = '/static/images/shauffers.png';
 export const car1 = '/static/images/car1.jpg';
 export const car2 = '/static/images/car2.jpg';

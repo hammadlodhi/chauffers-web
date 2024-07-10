@@ -16,3 +16,22 @@
         width: 320px;
     }
 }
+@include max(md) {
+    .about__body {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .about__body > h4 {
+      order: 1;
+    }
+    .about__body > img {
+      order: 2;
+    }
+    .about__body > p {
+      order: 3;
+    }
+    .about__car6, .about__car7, .about__car8 {
+      width: 100%;
+    }
+  }

@@ -7,7 +7,7 @@ const AboutUs = () => {
       <h1 className="about__heading mg-t-15">ABOUT US</h1>
       <hr />
       <div className="about__body mg-t-10">
-        <img width={620} height={200} src={car6} alt="" />
+        <img className="about__car6" width={620} height={200} src={car6} alt="" />
         <div>
           <h4 className="mg-b-3 gold">OUR MISSION</h4>S Chauffer is a renowned
           <p className="about__para1">
@@ -43,7 +43,7 @@ const AboutUs = () => {
         <img className="about__car7" src={car7} alt="" />
       </div>
       <div className="about__body mg-t-10">
-        <img width={450} src={car8} alt="" />
+        <img className="about__car8" width={450} src={car8} alt="" />
         <div>
           <h4 className="mg-b-3 gold">OUR FLEET</h4>
           <p className="about__para1">
