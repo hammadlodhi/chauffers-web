@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Mercedes",
+        "des": "vwoefneifubewniufneiofwnemfoiwenfmc weovk msdovk vosdvkl",
+        "img": "/static/images/car9.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Bentley",
+        "des": "vwoefneifubewniufneiofwnemfoiwenfmc weovk msdovk vosdvkl",
+        "img": "/static/images/car2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Rolls Royce",
+        "des": "vwoefneifubewniufneiofwnemfoiwenfmc weovk msdovk vosdvkl",
+        "img": "/static/images/car3.png"
+    },
+    {
+        "id": 4,
+        "title": "Mercedes",
+        "des": "vwoefneifubewniufneiofwnemfoiwenfmc weovk msdovk vosdvkl",
+        "img": "/static/images/car1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Bentley",
+        "des": "vwoefneifubewniufneiofwnemfoiwenfmc weovk msdovk vosdvkl",
+        "img": "/static/images/car2.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Rolls Royce",
+        "des": "vwoefneifubewniufneiofwnemfoiwenfmc weovk msdovk vosdvkl",
+        "img": "/static/images/car3.png"
+    }
+]
