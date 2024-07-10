@@ -1,0 +1,23 @@
+.gallery {
+    &__heading {
+        font-size: $fontXL;
+        color: $white;
+    }
+    &__description {
+        color: white;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+}
+
+@include max(md) {
+    .gallery__img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
