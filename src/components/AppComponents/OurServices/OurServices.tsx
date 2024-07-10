@@ -26,9 +26,9 @@ const OurServices = () => {
           for pleasure or an important business meeting, we can cover your every
           move.
         </p>
-        <h4 className="mg-b-5 gold">EVENTS CARE HIRING</h4>
-        <img className="mg-b-5" src={services1} alt="" />
-        <p className="services__para1 mg-b-10">
+        <h4 className='mg-b-5 gold'>EVENTS CARE HIRING</h4>
+        <img className='mg-b-5' src={services1} alt='' />
+        <p className='services__para1 mg-b-10'>
           Some of the most prominent events in Europe, like Wimbledon, the
           Chelsea Flower Show, and the Royal Albert Hall, are widely known to
           take place in London. There&apos;s no better way to take advantage of
@@ -43,10 +43,10 @@ const OurServices = () => {
           elegance.
         </p>
       </div>
-      <div className="services__body mg-t-10">
-        <h4 className="mg-b-5 gold">SERVICES FOR EVENTS CAR HIRE</h4>
-        <img className="services__img2 mg-b-5" src={services2} alt="" />
-        <p className="services__para1 mg-b-10">
+      <div className='services__body mg-t-10'>
+        <h4 className='mg-b-5 gold'>SERVICES FOR EVENTS CAR HIRE</h4>
+        <img className='services__img2 mg-b-5' src={services2} alt='' />
+        <p className='services__para1 mg-b-10'>
           We are aware that traffic in London can be a nightmare and that
           sometimes using the bus or a black cab is not an option. For this
           reason, we provide a stylish and relaxed luxury chauffeur-driven
@@ -59,34 +59,34 @@ const OurServices = () => {
           arrive in elegance, we will schedule your pick-up in a timely manner.
         </p>
       </div>
-      <div className="services__body mg-t-10">
-        <h4 className="mg-b-5 gold">AIRPORT TRANSPORTATION</h4>
-        <img className="services__img2 mg-b-5" src={services3} alt="" />
-        <p className="services__para1 mg-b-10">
-          Preparing your airport transfer before or after your travel shouldn't
-          be a source of additional stress. You can unwind and stop worrying
-          about traffic and travel delays by letting S Chauffer airport
-          transfer service handle all the hard work. All main airports in and
-          around London, such as Heathrow, Gatwick, Luton, City Airport, Biggin
-          Hill, and Stanstead, are served by our airport transfers. We also
-          arrange you transportation to any private airport. In addition to
+      <div className='services__body mg-t-10'>
+        <h4 className='mg-b-5 gold'>AIRPORT TRANSPORTATION</h4>
+        <img className='services__img2 mg-b-5' src={services3} alt='' />
+        <p className='services__para1 mg-b-10'>
+          Preparing your airport transfer before or after your travel
+          shouldn&apos;t be a source of additional stress. You can unwind and
+          stop worrying about traffic and travel delays by letting S Chauffer
+          airport transfer service handle all the hard work. All main airports
+          in and around London, such as Heathrow, Gatwick, Luton, City Airport,
+          Biggin Hill, and Stanstead, are served by our airport transfers. We
+          also arrange you transportation to any private airport. In addition to
           keeping you updated on the best route to take to reach your
           destination and the estimated time of arrival, we may set up several
           pick-up points. With the use of BAA in-car updates, our chauffeur
           closely monitors flight times and modifies the itinerary as needed.
         </p>
       </div>
-      <div className="services__body mg-t-10">
-        <h4 className="mg-b-5 gold">CHARTER HIRE FOR JETS AND YACTHS</h4>
-        <img className="services__img2 mg-b-5" src={services4} alt="" />
-        <p className="services__para1 mg-b-10">
-          Preparing your airport transfer before or after your travel shouldn't
-          be a source of additional stress. You can unwind and stop worrying
-          about traffic and travel delays by letting S Chauffer airport
-          transfer service handle all the hard work. All main airports in and
-          around London, such as Heathrow, Gatwick, Luton, City Airport, Biggin
-          Hill, and Stanstead, are served by our airport transfers. We also
-          arrange you transportation to any private airport. In addition to
+      <div className='services__body mg-t-10'>
+        <h4 className='mg-b-5 gold'>CHARTER HIRE FOR JETS AND YACTHS</h4>
+        <img className='services__img2 mg-b-5' src={services4} alt='' />
+        <p className='services__para1 mg-b-10'>
+          Preparing your airport transfer before or after your travel
+          shouldn&apos;t be a source of additional stress. You can unwind and
+          stop worrying about traffic and travel delays by letting S Chauffer
+          airport transfer service handle all the hard work. All main airports
+          in and around London, such as Heathrow, Gatwick, Luton, City Airport,
+          Biggin Hill, and Stanstead, are served by our airport transfers. We
+          also arrange you transportation to any private airport. In addition to
           keeping you updated on the best route to take to reach your
           destination and the estimated time of arrival, we may set up several
           pick-up points. With the use of BAA in-car updates, our chauffeur
