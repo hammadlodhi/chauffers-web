@@ -1,1 +1,0 @@
-export {LocalizedContent} from './LocalizedContent';

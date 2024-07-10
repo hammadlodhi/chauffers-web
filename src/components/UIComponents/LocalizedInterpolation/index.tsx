@@ -1,1 +1,0 @@
-export {LocalizedInterpolation} from './LocalizedInterpolation';

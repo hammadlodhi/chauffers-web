@@ -1,16 +1,22 @@
-import { car6, car7, car8 } from "@/util/images";
-import React from "react";
+import { car6, car7, car8 } from '@/util/images';
+import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className="about layout-width">
-      <h1 className="about__heading mg-t-15">ABOUT US</h1>
+    <div className='about layout-width'>
+      <h1 className='about__heading mg-t-15'>ABOUT US</h1>
       <hr />
-      <div className="about__body mg-t-10">
-        <img className="about__car6" width={620} height={200} src={car6} alt="" />
+      <div className='about__body mg-t-10'>
+        <img
+          className='about__car6'
+          width={620}
+          height={200}
+          src={car6}
+          alt=''
+        />
         <div>
-          <h4 className="mg-b-3 gold">OUR MISSION</h4>S Chauffer is a renowned
-          <p className="about__para1">
+          <h4 className='mg-b-3 gold'>OUR MISSION</h4>S Chauffer is a renowned
+          <p className='about__para1'>
             chauffeur hire business with headquarters in London that aims to
             offer both corporate and individual clients a high-quality service.
             Our discreet, dependable, and on-time service guarantees that each
@@ -22,10 +28,10 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="about__body mg-t-10">
+      <div className='about__body mg-t-10'>
         <div>
-          <h4 className="mg-b-3 gold">OUR CHAUFFERS</h4>
-          <p className="about__para1">
+          <h4 className='mg-b-3 gold'>OUR CHAUFFERS</h4>
+          <p className='about__para1'>
             The employees of S Chauffeurs go through a rigorous hiring process
             to guarantee that we deliver you courteous, discrete, and
             experienced drivers who will always strive to go above and beyond
@@ -36,17 +42,17 @@ const AboutUs = () => {
             or joyful brides. We treat every client like royalty. Our drivers
             are not only skilled behind the wheel but also well-versed in the
             art of exceptional customer service. They possess an intimate
-            knowledge of London's streets and landmarks, ensuring that you reach
-            your destination promptly and efficiently.
+            knowledge of London&apos;s streets and landmarks, ensuring that you
+            reach your destination promptly and efficiently.
           </p>
         </div>
-        <img className="about__car7" src={car7} alt="" />
+        <img className='about__car7' src={car7} alt='' />
       </div>
-      <div className="about__body mg-t-10">
-        <img className="about__car8" width={450} src={car8} alt="" />
+      <div className='about__body mg-t-10'>
+        <img className='about__car8' width={450} src={car8} alt='' />
         <div>
-          <h4 className="mg-b-3 gold">OUR FLEET</h4>
-          <p className="about__para1">
+          <h4 className='mg-b-3 gold'>OUR FLEET</h4>
+          <p className='about__para1'>
             We are aware that the impression we give off directly reflects on
             our clientele. We make sure that both your high expectations and our
             reputation are reflected in our wonderful and large fleet of luxury
