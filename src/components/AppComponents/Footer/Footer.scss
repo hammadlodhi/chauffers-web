@@ -1,0 +1,55 @@
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-top: 1px solid #dac06c;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  &__address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  &__icon {
+    background-color: #dac06c;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    padding: 20px;
+  }
+  &__title {
+    color: #dac06c;
+  }
+  a {
+    transition: color 0.8s;
+    font-size: 14px;
+    color: white;
+  }
+  a:hover {
+    color: red;
+  }
+  @include max(md) {
+    justify-content: center;
+  }
+}

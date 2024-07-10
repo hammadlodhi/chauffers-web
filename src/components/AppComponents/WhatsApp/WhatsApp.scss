@@ -1,8 +1,11 @@
 .whatsapp-icon {
   background-color: #25d366;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   border-radius: 100%;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
