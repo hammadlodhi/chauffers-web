@@ -43,7 +43,8 @@
     display: none;
   }
   &__nav-mobile-links {
-    position: absolute;
+    z-index: 1;
+    position: fixed;
     top: 115px;
     height: 0;
     background-color: black;
@@ -73,37 +74,10 @@
   .header__burger-icon {
     display: block;
   }
-
-  // .header__nav-links {
-  //   display: flex;
-  //   flex-direction: column;
-  //   position: absolute;
-  //   top: 115px;
-  //   left: 0;
-  //   width: 100%;
-  //   background-color: $black;
-  //   gap: 20px;
-  //   padding: 20px 0;
-  //   text-align: center;
-  //   padding-bottom: 40px;
-  // }
-
-  // .header__nav-buttons {
-  //   display: flex;
-  //   // flex-direction: column;
-  //   gap: 10px;
-  //   position: relative;
-  //   top: 20px;
-  //   right: 29px;
-  // }
 }
 
 @include max(sm) {
   .header__container {
     padding: 0 15px;
   }
-
-  // .header__nav-links {
-  //   gap: 15px;
-  // }
 }
