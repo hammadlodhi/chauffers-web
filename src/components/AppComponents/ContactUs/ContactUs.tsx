@@ -3,6 +3,8 @@ import React from 'react';
 import { FaGlobe, FaPhoneAlt } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import ErrorMessage from '@/components/UIComponents/ErrorMessage/ErrorMessage';
+import { Button, TextField } from '@mui/material';
 
 interface IFormInput {
   name: string;
@@ -18,7 +20,6 @@ const ContactUs = () => {
     handleSubmit,
   } = useForm<IFormInput>();
   const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
-  console.log(errors);
   return (
     <div className='contact-us'>
       <div className='contact-us__contact-details'>
@@ -53,23 +54,37 @@ const ContactUs = () => {
           <input
             type='text'
             placeholder='Enter your name'
-            {...register('name', { required: true })}
+            {...register('name', { required: 'Name is required' })}
           />
+          <ErrorMessage text={errors.name?.message} />
           <input
             type='text'
             placeholder='Enter your email'
-            {...register('email', { required: true })}
+            {...register('email', {
+              required: 'Email is required',
+              pattern: {
+                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                message: 'Please enter a valid email address',
+              },
+            })}
           />
+          <ErrorMessage text={errors.email?.message} />
           <input
             type='text'
             placeholder='Enter your phone'
-            {...register('phone', { required: true })}
+            {...register('phone', { required: 'Phone is required' })}
           />
+          <ErrorMessage text={errors.phone?.message} />
           <textarea
             placeholder='Enter description'
-            {...register('description', { required: true })}
+            {...register('description', {
+              required: 'Description is required',
+            })}
           ></textarea>
-          <button type='submit'>Submit</button>
+          <ErrorMessage text={errors.description?.message} />
+          <Button color='primary' type='submit' variant='contained'>
+            Submit
+          </Button>
         </form>
       </div>
     </div>
