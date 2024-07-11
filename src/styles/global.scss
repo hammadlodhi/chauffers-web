@@ -112,7 +112,8 @@ input:not([type='checkbox']) {
   resize: none;
   outline: none !important;
   width: 100%;
-  margin-top: size(1);
+  background-color: black;
+  color: white !important;
 }
 textarea {
   border-radius: $spacing * 2.5;
@@ -122,7 +123,8 @@ textarea {
   resize: none;
   outline: none !important;
   width: 100%;
-  margin-top: size(3);
+  background-color: black;
+  color: white !important;
 }
 ::-webkit-input-placeholder,
 :-ms-input-placeholder,

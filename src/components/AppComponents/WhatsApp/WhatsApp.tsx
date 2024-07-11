@@ -13,7 +13,7 @@ const WhatsApp: FC<IProps> = ({ number }) => {
 
   return (
     <Link className={classNames('whatsapp-icon')} href={toNumber}>
-      <FaWhatsapp size={60} fill='white' />
+      <FaWhatsapp size={40} fill='white' />
     </Link>
   );
 };
