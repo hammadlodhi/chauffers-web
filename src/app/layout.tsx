@@ -25,7 +25,7 @@ export default function RootLayout({
           {children}
         </div>
         {/* ADD WHATSAPP NUMBER WITHOUT + SIGN */}
-        <WhatsApp number={923172514024} />
+        <WhatsApp number={447783536435} />
         <Footer />
       </body>
     </html>

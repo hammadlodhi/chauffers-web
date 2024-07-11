@@ -29,9 +29,9 @@ const HomePage = () => {
       reloadSlider();
     };
 
-    // let refreshInterval = setInterval(() => {
-    //   next.click();
-    // }, 5000);
+    let refreshInterval = setInterval(() => {
+      next.click();
+    }, 4000);
 
     function reloadSlider() {
       slider.style.left = -items[active].offsetLeft + 'px';
@@ -42,10 +42,10 @@ const HomePage = () => {
       }
       dots[active].classList.add('active');
 
-      // clearInterval(refreshInterval);
-      // refreshInterval = setInterval(() => {
-      //   next.click();
-      // }, 3000);
+      clearInterval(refreshInterval);
+      refreshInterval = setInterval(() => {
+        // next.click();
+      }, 3000);
     }
 
     dots.forEach((li, key) => {
