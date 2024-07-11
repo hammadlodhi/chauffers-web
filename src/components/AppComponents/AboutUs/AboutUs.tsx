@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className='about layout-width'>
+    <div className='about layout-width' id='about'>
       <h1 className='about__heading mg-t-15'>ABOUT US</h1>
       <hr />
       <div className='about__body mg-t-10'>
@@ -15,8 +15,8 @@ const AboutUs = () => {
           alt=''
         />
         <div>
-          <h4 className="mg-b-3 gold">OUR OBJECTIVE</h4>S Chauffer is a renowned
-          <p className="about__para1">
+          <h4 className='mg-b-3 gold'>OUR OBJECTIVE</h4>S Chauffer is a renowned
+          <p className='about__para1'>
             chauffeur hire business with headquarters in London that aims to
             offer both corporate and individual clients a high-quality service.
             Our discreet, dependable, and on-time service guarantees that each

@@ -1,37 +1,40 @@
-.about{
-    background-image: url("/static/images/background.png");
-    &__heading {
-        font-size: $fontXL;
-        color: $white;
-    }
-    &__body {
-        display: flex;
-        gap: 60px;
-    }
-    &__para1 {
-        color: $white;
-        font-size: 14px;
-    }
-    &__car7 {
-        width: 320px;
-    }
+.about {
+  padding-top: 120px;
+  background-image: url('/static/images/background.png');
+  &__heading {
+    font-size: $fontXL;
+    color: $white;
+  }
+  &__body {
+    display: flex;
+    gap: 60px;
+  }
+  &__para1 {
+    color: $white;
+    font-size: 14px;
+  }
+  &__car7 {
+    width: 320px;
+  }
 }
 @include max(md) {
-    .about__body {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .about__body > h4 {
-      order: 1;
-    }
-    .about__body > img {
-      order: 2;
-    }
-    .about__body > p {
-      order: 3;
-    }
-    .about__car6, .about__car7, .about__car8 {
-      width: 100%;
-    }
+  .about__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
+  .about__body > h4 {
+    order: 1;
+  }
+  .about__body > img {
+    order: 2;
+  }
+  .about__body > p {
+    order: 3;
+  }
+  .about__car6,
+  .about__car7,
+  .about__car8 {
+    width: 100%;
+  }
+}

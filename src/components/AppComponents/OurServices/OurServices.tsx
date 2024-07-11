@@ -11,7 +11,7 @@ import React from 'react';
 
 const OurServices = () => {
   return (
-    <div className='services layout-width'>
+    <div className='services layout-width' id='services'>
       <h1 className='services__heading mg-t-15'>OUR SERVICES</h1>
       <hr />
       <div className='services__body mg-t-10'>

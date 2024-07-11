@@ -1,16 +1,16 @@
-"use client";
-import { car1, car2, car3, car4, car5 } from "@/util/images";
-import React, { useEffect } from "react";
+'use client';
+import { car1, car2, car3, car4, car5 } from '@/util/images';
+import React, { useEffect } from 'react';
 
 const HomePage = () => {
   useEffect(() => {
-    let slider = document.querySelector(".slider .list") as HTMLElement;
+    let slider = document.querySelector('.slider .list') as HTMLElement;
     let items = document.querySelectorAll(
-      ".slider .list .item"
+      '.slider .list .item'
     ) as NodeListOf<HTMLElement>;
-    let next = document.getElementById("next");
-    let prev = document.getElementById("prev");
-    let dots = document.querySelectorAll(".slider .dots li");
+    let next = document.getElementById('next');
+    let prev = document.getElementById('prev');
+    let dots = document.querySelectorAll('.slider .dots li');
 
     if (!slider || !items || items.length === 0 || !next || !prev || !dots) {
       return;
@@ -34,13 +34,13 @@ const HomePage = () => {
     // }, 5000);
 
     function reloadSlider() {
-      slider.style.left = -items[active].offsetLeft + "px";
+      slider.style.left = -items[active].offsetLeft + 'px';
 
-      let last_active_dot = document.querySelector(".slider .dots li.active");
+      let last_active_dot = document.querySelector('.slider .dots li.active');
       if (last_active_dot) {
-        last_active_dot.classList.remove("active");
+        last_active_dot.classList.remove('active');
       }
-      dots[active].classList.add("active");
+      dots[active].classList.add('active');
 
       // clearInterval(refreshInterval);
       // refreshInterval = setInterval(() => {
@@ -49,7 +49,7 @@ const HomePage = () => {
     }
 
     dots.forEach((li, key) => {
-      li.addEventListener("click", () => {
+      li.addEventListener('click', () => {
         active = key;
         reloadSlider();
       });
@@ -60,30 +60,30 @@ const HomePage = () => {
     };
   }, []);
   return (
-    <div className="slider">
-      <div className="list">
-        <div className="item">
-          <img src={car1} alt={""} />
+    <div className='slider' id='slider'>
+      <div className='list'>
+        <div className='item'>
+          <img src={car1} alt={''} />
         </div>
-        <div className="item">
-          <img src={car2} alt={""} />
+        <div className='item'>
+          <img src={car2} alt={''} />
         </div>
-        <div className="item">
-          <img src={car3} alt={""} />
+        <div className='item'>
+          <img src={car3} alt={''} />
         </div>
-        <div className="item">
-          <img src={car4} alt={""} />
+        <div className='item'>
+          <img src={car4} alt={''} />
         </div>
-        <div className="item">
-          <img src={car5} alt={""} />
+        <div className='item'>
+          <img src={car5} alt={''} />
         </div>
       </div>
-      <div className="buttons">
-        <button id="prev">{"<"}</button>
-        <button id="next">{">"}</button>
+      <div className='buttons'>
+        <button id='prev'>{'<'}</button>
+        <button id='next'>{'>'}</button>
       </div>
-      <ul className="dots">
-        <li className="active"></li>
+      <ul className='dots'>
+        <li className='active'></li>
         <li></li>
         <li></li>
         <li></li>
