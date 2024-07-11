@@ -20,8 +20,7 @@ const OurServices = () => {
           Cotswolds. Offering our clientele a personal bespoke door to door
           luxury chauffeur service, every time, day, evening or night. We really
           put our clientele&apos;s best interests first and make them our main
-          priority at all times. No matter where you live or work throughout
-          Gloucestershire, we can chauffeur you to local and national
+          priority at all times. We can chauffeur you to local and national
           destinations, at a time that suits you best. Whether your journey is
           for pleasure or an important business meeting, we can cover your every
           move.
@@ -50,7 +49,7 @@ const OurServices = () => {
           We are aware that traffic in London can be a nightmare and that
           sometimes using the bus or a black cab is not an option. For this
           reason, we provide a stylish and relaxed luxury chauffeur-driven
-          vehicle service to and from London. HR Carriages is here to help make
+          vehicle service to and from London. S Chauffer is here to help make
           your time in London with us as unforgettable as possible. London is a
           city rich in culture, history, and live entertainment. We offer a
           large selection of vehicles to fit both your needs and your budget. We
