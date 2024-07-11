@@ -81,11 +81,11 @@ const Header = () => {
                   Book A Car
                 </Button>
               </Link>
-              <Link href={quoteRoute}>
+              {/* <Link href={quoteRoute}>
                 <Button color='success' variant='contained'>
                   Get A Quote
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </nav>
           <BurgerMenu
@@ -103,23 +103,20 @@ const Header = () => {
         )}
       >
         {navLinks.map((link, index) => (
-          <Link className='header__links' key={index} href={link.route}>
+          <Link
+            className='header__links'
+            key={index}
+            href={link.route}
+            onClick={() => setOpenMenu(false)}
+          >
             {link.name}
           </Link>
         ))}
-
-        <div className='header__nav-buttons'>
-          <Link href={bookCarRoute}>
-            <Button color='primary' variant='contained'>
-              Book A Car
-            </Button>
-          </Link>
-          <Link href={quoteRoute}>
-            <Button color='success' variant='contained'>
-              Get A Quote
-            </Button>
-          </Link>
-        </div>
+        <Link href={bookCarRoute} onClick={() => setOpenMenu(false)}>
+          <Button color='primary' variant='contained'>
+            Book A Car
+          </Button>
+        </Link>
       </nav>
     </div>
   );

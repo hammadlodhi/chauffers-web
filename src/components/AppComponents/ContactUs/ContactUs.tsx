@@ -77,6 +77,7 @@ const ContactUs = () => {
           <ErrorMessage text={errors.phone?.message} />
           <textarea
             placeholder='Enter description'
+            rows={10}
             {...register('description', {
               required: 'Description is required',
             })}
