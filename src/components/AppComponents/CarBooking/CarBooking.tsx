@@ -27,24 +27,24 @@ const CarBooking = () => {
   } = useForm<IBookCarInput>();
   const onSubmit: SubmitHandler<IBookCarInput> = (data) => console.log(data);
   return (
-    <div className="contact-us">
-      <div className="contact-us__contact-details">
-        <div className="contact-us__field-container">
-          <h1 className="contact-us__title">Contact</h1>
-          <div className="contact-us__container">
-            <div className="contact-us__icon">
+    <div className="car-booking">
+      <div className="car-booking__contact-details">
+        <div className="car-booking__field-container">
+          <h1 className="car-booking__title">Contact</h1>
+          <div className="car-booking__container">
+            <div className="car-booking__icon">
               <FaPhoneAlt size={20} fill="black" />
             </div>
             <a href="tel:+44 7783 53 6435">+44 7783 53 6435</a>
           </div>
-          <div className="contact-us__container">
-            <div className="contact-us__icon">
+          <div className="car-booking__container">
+            <div className="car-booking__icon">
               <IoMdMail size={20} fill="black" />
             </div>
             <a href="mailto:connect@schauffeur.com">connect@schauffeur.com</a>
           </div>
-          <div className="contact-us__container">
-            <div className="contact-us__icon">
+          <div className="car-booking__container">
+            <div className="car-booking__icon">
               <FaGlobe size={20} fill="black" />
             </div>
             <a href="https://www.schauffeur.com" target="_blank">
@@ -53,7 +53,7 @@ const CarBooking = () => {
           </div>
         </div>
       </div>
-      <div className="contact-us__contact-form">
+      <div className="car-booking__contact-form">
         <h1>Car Booking System</h1>
         <p>Book a car by filling up the form below</p>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -73,11 +73,16 @@ const CarBooking = () => {
             })}
           />
           <ErrorMessage text={errors.destination_address?.message} />
-          <input
-            type="text"
-            placeholder="Car Type"
+          <select
+            className="car-booking__select-box"
             {...register("car_type", { required: "Car type is required" })}
-          />
+          >
+            <option value="" disabled selected>Select your Car type</option>
+            <option value="1">Bentley</option>
+            <option value="2">Mercedes-Benz S-Class</option>
+            <option value="3">Rolls Royce Phantom</option>
+            <option value="4">Range Rover</option>
+          </select>
           <ErrorMessage text={errors.car_type?.message} />
           <RadioGroup
             row
