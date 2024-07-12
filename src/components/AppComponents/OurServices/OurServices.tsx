@@ -31,17 +31,17 @@ const OurServices = () => {
           Chelsea Flower Show, Ascot Race, and the Royal Albert Hall, are widely
           known to take place in London. There's no better way to take advantage
           of some of London's top events than arriving in luxury
-          chauffeur-driven cars. The celebrations start as soon as S Chauffer'
+          chauffeur-driven cars. The celebrations start as soon as S Chauffeur'
           selection of opulent cars picks you up; we can add a little more
           specialness to your outing by bringing a bottle of chilled champagne.
           The hassle of finding a place to park or making the lengthy trek
           through the throng of people to get to the door won't need to worry
-          you. S Chauffer will ensure that your trip to that important event is
+          you. S Chauffeur will ensure that your trip to that important event is
           luxurious and stress-free, allowing you to arrive in elegance.
         </p>
       </div>
       <div className="services__body mg-t-10">
-        <h4 className="mg-b-5 gold">SERVICES FOR EVENTS CAR HIRE</h4>
+        <h4 className="mg-b-5 gold">WEDDING CAR HIRE SERVICE</h4>
         <img className="services__img2 mg-b-5" src={services2} alt="" />
         <p className="services__para1 mg-b-10">
           We are aware that traffic in London can be a nightmare and that

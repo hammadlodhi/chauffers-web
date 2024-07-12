@@ -77,7 +77,7 @@ const CarBooking = () => {
             className="car-booking__select-box"
             {...register("car_type", { required: "Car type is required" })}
           >
-            <option value="" disabled selected>Select your Car type</option>
+            <option value="" disabled selected>Select your car type</option>
             <option value="1">Bentley</option>
             <option value="2">Mercedes-Benz S-Class</option>
             <option value="3">Rolls Royce Phantom</option>

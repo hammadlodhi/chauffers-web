@@ -30,7 +30,7 @@ const AboutUs = () => {
       </div>
       <div className='about__body mg-t-10'>
         <div>
-          <h4 className='mg-b-3 gold'>OUR CHAUFFERS</h4>
+          <h4 className='mg-b-3 gold'>OUR CHAUFFEURS</h4>
           <p className='about__para1'>
             The employees of S Chauffeurs go through a rigorous hiring process
             to guarantee that we deliver you courteous, discrete, and
