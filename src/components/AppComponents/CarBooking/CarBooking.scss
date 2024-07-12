@@ -1,0 +1,19 @@
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background: transparent; /* Makes the default calendar icon transparent */
+}
+
+/* Custom icon style */
+input[type="datetime-local"] {
+    position: relative;
+}
+
+input[type="datetime-local"]::after {
+    content: '\1F4C5'; /* Unicode character for calendar icon */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: white; /* Change this to the desired icon color */
+    font-size: 1.2em; /* Adjust size as needed */
+}

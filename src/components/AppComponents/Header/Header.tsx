@@ -77,7 +77,7 @@ const Header = () => {
 
             <div className='header__nav-buttons'>
               <Link href={bookCarRoute}>
-                <Button color='primary' variant='contained'>
+                <Button color='error' variant='contained'>
                   Book A Car
                 </Button>
               </Link>

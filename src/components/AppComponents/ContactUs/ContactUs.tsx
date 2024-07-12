@@ -83,7 +83,7 @@ const ContactUs = () => {
             })}
           ></textarea>
           <ErrorMessage text={errors.description?.message} />
-          <Button color='primary' type='submit' variant='contained'>
+          <Button color='success' type='submit' variant='contained'>
             Submit
           </Button>
         </form>

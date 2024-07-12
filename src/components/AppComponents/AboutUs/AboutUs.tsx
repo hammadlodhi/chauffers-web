@@ -15,13 +15,13 @@ const AboutUs = () => {
           alt=''
         />
         <div>
-          <h4 className='mg-b-3 gold'>OUR OBJECTIVE</h4>S Chauffer is a renowned
+          <h4 className='mg-b-3 gold'>OUR OBJECTIVE</h4>S Chauffeur is a renowned
           <p className='about__para1'>
             chauffeur hire business with headquarters in London that aims to
             offer both corporate and individual clients a high-quality service.
             Our discreet, dependable, and on-time service guarantees that each
             client receives flawless care while under our supervision. S
-            Chauffer has established a strong reputation in the very competitive
+            Chauffeur has established a strong reputation in the very competitive
             London chauffeured car market. As we continue to grow, we are
             expanding our offerings to include yacht charter and private
             aircraft hiring.

@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "title": "Mercedes-Benz S-Class",
-        "des": "The interior architecture of the S-Class is creative and provides an excellent passenger environment. With separately adjustable air chambers, the ergonomically prioritized individually multi-contour chairs allow you to customize a custom-fit seat with the best possible lumbar support. The seats also include a massaging function for added relaxation.",
-        "img": "/static/images/car9.jpg"
+        "title": "Bentley",
+        "des": "The Bentley line is the brand's flagship model and the pinnacle of luxury and performance. You can select an experience with S Chauffeurs that gives you access to an exclusive and unmatched world of sophistication. Bentley didn't skimp on any details while designing the Bentley S-Class.",
+        "img": "/static/images/car13.jpg"
     },
     {
         "id": 2,
-        "title": "Mercedes-Benz",
-        "des": "The Mercedes V Class has space for up to eight passengers and is ready with all the amenities a full-fledged business car needs. The chauffeur-driven S-Class is a great choice for a business car, tour vehicle, or shuttle. It has all the necessary credentials for travels to your most important locations, including west-end theaters and restaurants, airport and hotel transfers, and city offices.",
-        "img": "/static/images/car10.jpg"
+        "title": "Mercedes-Benz S-Class",
+        "des": "The interior architecture of the S-Class is creative and provides an excellent passenger environment. With separately adjustable air chambers, the ergonomically prioritized individually multi-contour chairs allow you to customize a custom-fit seat with the best possible lumbar support. The seats also include a massaging function for added relaxation.",
+        "img": "/static/images/car9.jpg"
     },
     {
         "id": 3,
@@ -19,19 +19,19 @@
     },
     {
         "id": 4,
+        "title": "Mercedes-Benz",
+        "des": "The Mercedes V Class has space for up to eight passengers and is ready with all the amenities a full-fledged business car needs. The chauffeur-driven S-Class is a great choice for a business car, tour vehicle, or shuttle. It has all the necessary credentials for travels to your most important locations, including west-end theaters and restaurants, airport and hotel transfers, and city offices.",
+        "img": "/static/images/car10.jpg"
+    },
+    {
+        "id": 5,
         "title": "Range Rover",
         "des": "Range Rover has established itself as the world's most dependable and durable sports car and is widely associated with four-wheel drive sport utility vehicles. The Range Rover Vogue, created by Range Rover, takes the idea of luxury automobiles and envelops it in the highest level of performance and four-wheel drive engineering. With a commanding appearance and an elevated sitting position that lets the driver and passengers thoroughly observe their surroundings, the Range Rover offers a luxurious driving experience. This makes the Range Rover the perfect car for weekend getaways to the country and athletic events.",
         "img": "/static/images/car12.jpg"
     },
     {
-        "id": 5,
-        "title": "Bentley",
-        "des": "The Bentley line is the brand's flagship model and the pinnacle of luxury and performance. You can select an experience with S Chauffers that gives you access to an exclusive and unmatched world of sophistication. Bentley didn't skimp on any details while designing the Bentley S-Class.",
-        "img": "/static/images/car13.jpg"
-    },
-    {
         "id": 6,
-        "title": "Bentley S-Class",
+        "title": "Bentley",
         "des": "From the gorgeous leather hides and distinctive brightware that adorn the interior and outside of the automobile to the flawless mirror-matched wood veneers that surround the cabin. Slightly altered styling and a lower stance give it a more aggressive, dark vibe, and it makes use of numerous motoring technological advancements to boost performance. As a result, the Bentley delivers unrestricted acceleration, smooth overtaking, and unmatched dynamic ability.",
         "img": "/static/images/car14.jpg"
     }
