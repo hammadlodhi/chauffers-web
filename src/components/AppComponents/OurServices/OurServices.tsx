@@ -19,7 +19,7 @@ const OurServices = () => {
           Specialising in business and private VIP travel throughout London.
           Offering our clientele a personal bespoke door to door luxury
           chauffeur service, every time, day, evening, or night. We really put
-          our clientele's best interests first and make them our main priority
+          our clientele&apos;s best interests first and make them our main priority
           at all times. We can chauffeur you to local and national destinations
           at a time that suits you best. Whether your journey is for pleasure or
           an important business meeting, we can cover your every move.
@@ -29,13 +29,13 @@ const OurServices = () => {
         <p className="services__para1 mg-b-10">
           Some of the most prominent events in Europe, like Wimbledon, the
           Chelsea Flower Show, Ascot Race, and the Royal Albert Hall, are widely
-          known to take place in London. There's no better way to take advantage
-          of some of London's top events than arriving in luxury
-          chauffeur-driven cars. The celebrations start as soon as S Chauffeur'
+          known to take place in London. There&apos;s no better way to take advantage
+          of some of London&apos;s top events than arriving in luxury
+          chauffeur-driven cars. The celebrations start as soon as S Chauffeur&apos;
           selection of opulent cars picks you up; we can add a little more
           specialness to your outing by bringing a bottle of chilled champagne.
           The hassle of finding a place to park or making the lengthy trek
-          through the throng of people to get to the door won't need to worry
+          through the throng of people to get to the door won&apos;t need to worry
           you. S Chauffeur will ensure that your trip to that important event is
           luxurious and stress-free, allowing you to arrive in elegance.
         </p>
