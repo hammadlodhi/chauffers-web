@@ -1,0 +1,6 @@
+.regions {
+    &__links:hover {
+        color: $gold;
+        transition: color 0.4s ease;
+    }
+}

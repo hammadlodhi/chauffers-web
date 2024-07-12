@@ -10,6 +10,7 @@ import {
   ourGalleryRoute,
   ourServicesRoute,
   quoteRoute,
+  regionsWeCoverRoute,
 } from '@/util/routes';
 import { logo } from '@/util/images';
 import Image from 'next/image';
@@ -39,19 +40,12 @@ const Header = () => {
       route: '/#gallery',
     },
     {
+      name: 'Regions we cover',
+      route: regionsWeCoverRoute,
+    },
+    {
       name: 'Contact us',
       route: contactUsRoute,
-    },
-  ];
-
-  const buttonLinks = [
-    {
-      name: 'Book A Car',
-      route: bookCarRoute,
-    },
-    {
-      name: 'Get A Quote',
-      route: quoteRoute,
     },
   ];
 
@@ -78,12 +72,12 @@ const Header = () => {
             <div className='header__nav-buttons'>
               <Link href={bookCarRoute}>
                 <Button color='error' variant='contained'>
-                  Book A Car
+                  Get a Quote
                 </Button>
               </Link>
               {/* <Link href={quoteRoute}>
                 <Button color='success' variant='contained'>
-                  Get A Quote
+                  Book a Car
                 </Button>
               </Link> */}
             </div>
@@ -113,8 +107,8 @@ const Header = () => {
           </Link>
         ))}
         <Link href={bookCarRoute} onClick={() => setOpenMenu(false)}>
-          <Button color='primary' variant='contained'>
-            Book A Car
+          <Button color='error' variant='contained'>
+            Get a Quote
           </Button>
         </Link>
       </nav>
