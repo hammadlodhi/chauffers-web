@@ -6,3 +6,4 @@ export const contactUsRoute = '/contact-us';
 export const bookCarRoute = '/book-car';
 export const quoteRoute = '/quote';
 export const regionsWeCoverRoute = '/regions-we-cover';
+export const getaQuoteRoute = 'get-a-quote';

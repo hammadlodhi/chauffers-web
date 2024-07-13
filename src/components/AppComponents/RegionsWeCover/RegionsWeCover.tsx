@@ -56,7 +56,7 @@ const RegionsWeCover = () => {
   return (
     <div className="layout-width">
       <div>
-        <img width={1200} src={cover} alt="" />
+        <img width={1200} src={cover} alt="" className="responsive-image" />
       </div>
       <h1 className="regions mg-t-15 white">Regions We Cover</h1>
       <hr />
@@ -67,7 +67,7 @@ const RegionsWeCover = () => {
         regions with knowledgeable local chauffeurs to attend to you or your
         esteemed clients.
       </h4>
-      <h4 className="mg-t-10 white">Our Reional Websites are listed below;</h4>
+      <h4 className="mg-t-10 white">Our Regional Websites are listed below;</h4>
       {regions.map((region, index) => (
         <Link href={homeRoute} key={index} style={{ textDecoration: "none" }}>
           <p
