@@ -10,6 +10,7 @@ export const car7 = '/static/images/car7.jpg';
 export const car8 = '/static/images/car8.jpg';
 export const car9 = '/static/images/car15.jpg';
 export const car10 = '/static/images/car16.jpg';
+export const car11 = '/static/images/car17.jpg';
 export const services1 = '/static/images/services1.jpg';
 export const services2 = '/static/images/services2.jpg';
 export const services3 = '/static/images/services3.jpg';
