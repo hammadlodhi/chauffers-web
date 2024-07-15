@@ -1,5 +1,5 @@
 "use client";
-import { car1, car2, car3, car4, car5 } from "@/util/images";
+import { car1, car11, car2, car3, car4, car5 } from "@/util/images";
 import React, { useEffect, useRef } from "react";
 
 const HomePage = () => {
@@ -78,7 +78,7 @@ const HomePage = () => {
           <img src={car1} alt={""} />
         </div>
         <div className="item">
-          <img src={car4} alt={""} />
+          <img src={car11} alt={""} />
         </div>
         <div className="item">
           <img src={car3} alt={""} />
