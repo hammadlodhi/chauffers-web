@@ -54,9 +54,33 @@ const CarBooking = () => {
         </div>
       </div>
       <div className="car-booking__contact-form">
-        <h1>Car Booking System</h1>
+        <h1>Get A Quote</h1>
         <p>Book a car by filling up the form below</p>
         <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+            type="text"
+            placeholder="Enter your name"
+            {...register("name", { required: "Name is required" })}
+          />
+          <ErrorMessage text={errors.name?.message} />
+          <input
+            type="text"
+            placeholder="Email"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                message: "Please enter a valid email address",
+              },
+            })}
+          />
+          <ErrorMessage text={errors.email?.message} />
+          <input
+            type="text"
+            placeholder="Phone"
+            {...register("phone", { required: "Phone is required" })}
+          />
+          <ErrorMessage text={errors.phone?.message} />
           <input
             type="text"
             placeholder="Pickup Address"
@@ -78,10 +102,11 @@ const CarBooking = () => {
             {...register("car_type", { required: "Car type is required" })}
           >
             <option value="" disabled selected>Select your car type</option>
-            <option value="1">Bentley</option>
-            <option value="2">Mercedes-Benz S-Class</option>
-            <option value="3">Rolls Royce Phantom</option>
+            <option value="1">Mercedes S-Class</option>
+            <option value="2">Mercedes V-Class</option>
             <option value="4">Range Rover</option>
+            <option value="4">Bentley</option>
+            <option value="3">Rolls Royce Phantom</option>
           </select>
           <ErrorMessage text={errors.car_type?.message} />
           <RadioGroup
@@ -127,45 +152,8 @@ const CarBooking = () => {
               }
               label="Multi-Destination Journey"
             />
-            <FormControlLabel
-              value="disabled"
-              disabled
-              control={
-                <Radio
-                  sx={{
-                    color: "#dac06c",
-                    "&.Mui-checked": { color: "#dac06c" },
-                  }}
-                />
-              }
-              label="other"
-            />
           </RadioGroup>
           <ErrorMessage text={errors.journey_type?.message} />
-          <input
-            type="text"
-            placeholder="Enter your name"
-            {...register("name", { required: "Name is required" })}
-          />
-          <ErrorMessage text={errors.name?.message} />
-          <input
-            type="text"
-            placeholder="Email"
-            {...register("email", {
-              required: "Email is required",
-              pattern: {
-                value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                message: "Please enter a valid email address",
-              },
-            })}
-          />
-          <ErrorMessage text={errors.email?.message} />
-          <input
-            type="text"
-            placeholder="Phone"
-            {...register("phone", { required: "Phone is required" })}
-          />
-          <ErrorMessage text={errors.phone?.message} />
           <input type="datetime-local" placeholder="Time to pickup" />
           <ErrorMessage text={errors.time?.message} />
           <textarea
@@ -175,7 +163,7 @@ const CarBooking = () => {
           ></textarea>
           <ErrorMessage text={errors.description?.message} />
           <Button color="success" type="submit" variant="contained">
-            Book your car
+            Submit
           </Button>
         </form>
       </div>
