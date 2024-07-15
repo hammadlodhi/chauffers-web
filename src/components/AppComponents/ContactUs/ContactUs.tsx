@@ -5,6 +5,7 @@ import { IoMdMail } from 'react-icons/io';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import ErrorMessage from '@/components/UIComponents/ErrorMessage/ErrorMessage';
 import { Button, TextField } from '@mui/material';
+import axios from 'axios';
 
 interface IFormInput {
   name: string;
@@ -19,7 +20,16 @@ const ContactUs = () => {
     formState: { errors },
     handleSubmit,
   } = useForm<IFormInput>();
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+
+
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    try {
+      const response = await axios.post('http://localhost:3000/api/app/send-email', data);
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
   return (
     <div className='contact-us'>
       <div className='contact-us__contact-details'>
