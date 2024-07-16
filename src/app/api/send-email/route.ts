@@ -1,12 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { type NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== 'POST') {
-    return res.status(405).send({ message: 'Only POST requests are allowed' });
-  }
-
-  const { name, email, phone, description } = req.body;
+export async function POST(req: Request) {
+  const body = await req.json();
+  console.log(body);
+  const { name, email, phone, description } = body;
 
   // Configure your email transporter
   const transporter = nodemailer.createTransport({
@@ -26,11 +25,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: 'Email sent successfully' });
+    return Response.json({ message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Error sending email' });
+    return Response.json({ message: 'Error sending email' });
   }
-};
-
-export default handler;
+}

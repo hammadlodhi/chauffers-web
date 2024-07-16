@@ -21,10 +21,12 @@ const ContactUs = () => {
     handleSubmit,
   } = useForm<IFormInput>();
 
-
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/app/send-email', data);
+      const response = await axios.post(
+        'http://localhost:3000/api/send-email',
+        data
+      );
       console.log(response.data);
     } catch (error) {
       console.error('Error submitting form:', error);
