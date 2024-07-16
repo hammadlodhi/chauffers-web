@@ -9,19 +9,19 @@
     },
     {
         "id": 3,
-        "img": "/static/images/car21.jpeg"
-    },
-    {
-        "id": 4,
         "img": "/static/images/car22.jpeg"
     },
     {
-        "id": 5,
+        "id": 4,
         "img": "/static/images/car23.jpeg"
     },
     {
+        "id": 5,
+        "img": "/static/images/car6.jpg"
+    },
+    {
         "id": 6,
-        "img": "/static/images/car24.jpeg"
+        "img": "/static/images/car21.jpeg"
     },
     {
         "id": 7,

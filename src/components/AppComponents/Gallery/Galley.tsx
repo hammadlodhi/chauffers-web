@@ -18,7 +18,7 @@ const Galley = () => {
         <h4 className="mg-b-5 white gallery__img-heading">
           MERCEDES-BENZ S350L AMG "EXECUTIVE" (LWB).
         </h4>
-        <img width={550} src={car12} className="gallery__img" />
+        <img width={550} src={car12} className="gallery__main-image" />
       </div>
       <div className="gallery__front-img">
         <ul className="gallery__car-features">
