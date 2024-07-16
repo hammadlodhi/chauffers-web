@@ -1,20 +1,50 @@
 [
     {
+        "id": 1,
+        "img": "/static/images/car19.jpeg"
+    },
+    {
         "id": 2,
-        "title": "Mercedes-Benz S-Class",
-        "des": "The interior architecture of the S-Class is creative and provides an excellent passenger environment. With separately adjustable air chambers, the ergonomically prioritized individually multi-contour chairs allow you to customize a custom-fit seat with the best possible lumbar support. The seats also include a massaging function for added relaxation.",
-        "img": "/static/images/car9.jpg"
+        "img": "/static/images/car20.jpeg"
+    },
+    {
+        "id": 3,
+        "img": "/static/images/car21.jpeg"
     },
     {
         "id": 4,
-        "title": "Mercedes-Benz V-Class",
-        "des": "The Mercedes V Class has space for up to eight passengers and is ready with all the amenities a full-fledged business car needs. The chauffeur-driven S-Class is a great choice for a business car, tour vehicle, or shuttle. It has all the necessary credentials for travels to your most important locations, including west-end theaters and restaurants, airport and hotel transfers, and city offices.",
-        "img": "/static/images/car10.jpg"
+        "img": "/static/images/car22.jpeg"
     },
     {
         "id": 5,
-        "title": "Range Rover LWB",
-        "des": "Range Rover has established itself as the world's most dependable and durable sports car and is widely associated with four-wheel drive sport utility vehicles. The Range Rover Vogue, created by Range Rover, takes the idea of luxury automobiles and envelops it in the highest level of performance and four-wheel drive engineering. With a commanding appearance and an elevated sitting position that lets the driver and passengers thoroughly observe their surroundings, the Range Rover offers a luxurious driving experience. This makes the Range Rover the perfect car for weekend getaways to the country and athletic events.",
-        "img": "/static/images/car12.jpg"
+        "img": "/static/images/car23.jpeg"
+    },
+    {
+        "id": 6,
+        "img": "/static/images/car24.jpeg"
+    },
+    {
+        "id": 7,
+        "img": "/static/images/car25.jpeg"
+    },
+    {
+        "id": 8,
+        "img": "/static/images/car26.jpeg"
+    },
+    {
+        "id": 9,
+        "img": "/static/images/car27.jpeg"
+    },
+    {
+        "id": 10,
+        "img": "/static/images/car28.jpeg"
+    },
+    {
+        "id": 11,
+        "img": "/static/images/car29.jpeg"
+    },
+    {
+        "id": 12,
+        "img": "/static/images/car30.jpeg"
     }
 ]

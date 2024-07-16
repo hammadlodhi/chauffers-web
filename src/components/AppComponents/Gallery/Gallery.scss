@@ -4,6 +4,9 @@
     font-size: $fontXL;
     color: $white;
   }
+  &__body {
+    text-align: center;
+  }
   &__description {
     color: white;
     display: -webkit-box;
@@ -22,7 +25,39 @@
     transition: transform 0.3s ease-in-out;
   }
   &__img:hover {
-    transform: scale(1.08);
+    transform: scale(1.04);
+  }
+  &__img-heading {
+    text-decoration: underline;
+  }
+  &__front-img {
+    display: flex;
+    justify-content: center;
+  }
+  &__car-features {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: white; 
+  }
+  &__car-features li {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  &__grid-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    max-width: 325px;
+    width: 100%;
   }
 }
 
@@ -31,4 +66,8 @@
     width: 100%;
     border-radius: 5px;
   }
+  .gallery__grid { 
+    color: red;
+  }
+
 }

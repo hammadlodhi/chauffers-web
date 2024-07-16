@@ -7,6 +7,7 @@ import {
   CardActionArea,
 } from "@mui/material";
 import Data from "./Data.json";
+import { car12 } from "@/util/images";
 
 const Galley = () => {
   return (
@@ -14,53 +15,41 @@ const Galley = () => {
       <h1 className="gallery__heading mg-t-15">OUR GALLERY</h1>
       <hr />
       <div className="gallery__body mg-t-10">
-        <Grid container spacing={5}>
-          {Data.map((result, index) => (
-            <Grid item xs={12} sm={4} key={index}>
-              <Card
-                sx={{ maxWidth: 345 }}
-                style={{
-                  padding: "10px",
-                  marginBottom: "30px",
-                  backgroundColor: "black",
-                  border: "1px solid #dac06c",
-                }}
-              >
-                <CardActionArea>
-                  <div className="gallery__img-container">
-                    <img
-                      className="gallery__img"
-                      height="184"
-                      src={result.img}
-                      alt={result.title}
-                    />
-                  </div>
-                  <CardContent style={{ textAlign: "left" }}>
-                    <Typography
-                      gutterBottom
-                      variant="h6"
-                      component="div"
-                      style={{
-                        color: "white",
-                      }}
-                    >
-                      {result.title}
-                    </Typography>
-                    <Typography
-                      className="gallery__description"
-                      gutterBottom
-                      variant="body2"
-                      color="text.secondary"
-                      style={{ color: "white" }}
-                    >
-                      {result.des}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
+        <h4 className="mg-b-5 white gallery__img-heading">
+          MERCEDES-BENZ S350L AMG "EXECUTIVE" (LWB).
+        </h4>
+        <img width={550} src={car12} className="gallery__img" />
+      </div>
+      <div className="gallery__front-img">
+        <ul className="gallery__car-features">
+          <li>Heated & Cooling Reclining Rear Seats.</li>
+          <li>Privacy Glass with Blinds.</li>
+          <li>Panoramic Glass Sunroof.</li>
+          <li>Full climate control, Front and Rear.</li>
+          <li>Comand Online system with Media Interface.</li>
+        </ul>
+      </div>
+      <div className="gallery__grid">
+        {Data.map((result, index) => (
+          <div className="gallery__grid-item" key={index}>
+            <div
+              className="gallery__card"
+              style={{
+                backgroundColor: "black",
+                border: "1px solid #dac06c",
+              }}
+            >
+              <div className="gallery__img-container">
+                <img
+                  className="gallery__img"
+                  height="184"
+                  src={result.img}
+                  alt={`Gallery Image ${index}`}
+                />
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
