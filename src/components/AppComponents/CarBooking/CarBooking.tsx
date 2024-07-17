@@ -6,6 +6,9 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import ErrorMessage from "@/components/UIComponents/ErrorMessage/ErrorMessage";
 import { Button, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 import { useRouter } from "next/navigation";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import { homeRoute } from "@/util/routes";
 
 interface IBookCarInput {
   name: string;
@@ -18,8 +21,8 @@ interface IBookCarInput {
   return_destination_address?: string;
   car_type: string;
   journey_type: string;
-  date: string;
-  time: string;
+  pickup_time: string;
+  destination_time: string;
   description: string;
 }
 
@@ -53,9 +56,24 @@ const CarBooking = () => {
     formState: { errors },
     handleSubmit,
   } = useForm<IBookCarInput>();
-  const onSubmit: SubmitHandler<IBookCarInput> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<IBookCarInput> = async (data) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/api/single-journey",
+        data
+      );
+      console.log(response.data);
+      toast.success("Email sent successfully!");
+      setTimeout(() => {
+        router.push(homeRoute);
+      }, 2000);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
   return (
     <div className="car-booking">
+      <ToastContainer />
       <div className="car-booking__contact-details">
         <div className="car-booking__field-container">
           <h1 className="car-booking__title">Contact</h1>
@@ -222,11 +240,21 @@ const CarBooking = () => {
             </>
           )}
           <label htmlFor="pickup_time">Time to pickup</label>
-          <input type="datetime-local" />
-          <ErrorMessage text={errors.time?.message} />
+          <input
+            type="datetime-local"
+            {...register("pickup_time", {
+              required: "Pickup time is required",
+            })}
+          />
+          <ErrorMessage text={errors.pickup_time?.message} />
           <label htmlFor="destination_time">Time to dropoff</label>
-          <input type="datetime-local" />
-          <ErrorMessage text={errors.time?.message} />
+          <input
+            type="datetime-local"
+            {...register("destination_time", {
+              required: "Dropoff time is required",
+            })}
+          />
+          <ErrorMessage text={errors.destination_time?.message} />
           <label htmlFor="description">Description</label>
           <textarea
             placeholder="Enter Additional Notes"

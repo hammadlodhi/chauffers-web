@@ -19,25 +19,27 @@ const OurServices = () => {
           Specialising in business and private VIP travel throughout London.
           Offering our clientele a personal bespoke door to door luxury
           chauffeur service, every time, day, evening, or night. We really put
-          our clientele&apos;s best interests first and make them our main priority
-          at all times. We can chauffeur you to local and national destinations
-          at a time that suits you best. Whether your journey is for pleasure or
-          an important business meeting, we can cover your every move.
+          our clientele&apos;s best interests first and make them our main
+          priority at all times. We can chauffeur you to local and national
+          destinations at a time that suits you best. Whether your journey is
+          for pleasure or an important business meeting, we can cover your every
+          move.
         </p>
         <h4 className="mg-b-5 gold">EVENTS CAR HIRING</h4>
         <img className="mg-b-5" src={services1} alt="" />
         <p className="services__para1 mg-b-10">
           Some of the most prominent events in Europe, like Wimbledon, the
           Chelsea Flower Show, Ascot Race, and the Royal Albert Hall, are widely
-          known to take place in London. There&apos;s no better way to take advantage
-          of some of London&apos;s top events than arriving in luxury
-          chauffeur-driven cars. The celebrations start as soon as S Chauffeur&apos;
-          selection of opulent cars picks you up; we can add a little more
-          specialness to your outing by bringing a bottle of chilled champagne.
-          The hassle of finding a place to park or making the lengthy trek
-          through the throng of people to get to the door won&apos;t need to worry
-          you. S Chauffeur will ensure that your trip to that important event is
-          luxurious and stress-free, allowing you to arrive in elegance.
+          known to take place in London. There&apos;s no better way to take
+          advantage of some of London&apos;s top events than arriving in luxury
+          chauffeur-driven cars. The celebrations start as soon as S
+          Chauffeur&apos; selection of opulent cars picks you up; we can add a
+          little more specialness to your outing by bringing a bottle of chilled
+          champagne. The hassle of finding a place to park or making the lengthy
+          trek through the throng of people to get to the door won&apos;t need
+          to worry you. S Chauffeur will ensure that your trip to that important
+          event is luxurious and stress-free, allowing you to arrive in
+          elegance.
         </p>
       </div>
       <div className="services__body mg-t-10">
@@ -66,28 +68,13 @@ const OurServices = () => {
           airport transfer service handle all the hard work. All main airports
           in and around London, such as Heathrow, Gatwick, Luton, City Airport,
           Biggin Hill, and Stanstead, are served by our airport transfers. We
-          also arrange you transportation to any private airport. In addition to
-          keeping you updated on the best route to take to reach your
-          destination and the estimated time of arrival, we may set up several
-          pick-up points. With the use of BAA in-car updates, our chauffeur
-          closely monitors flight times and modifies the itinerary as needed.
-        </p>
-      </div>
-      <div className="services__body mg-t-10">
-        <h4 className="mg-b-5 gold">CHARTER HIRE FOR JETS AND YACTHS</h4>
-        <img className="services__img2 mg-b-5" src={services4} alt="" />
-        <p className="services__para1 mg-b-10">
-          Preparing your airport transfer before or after your travel
-          shouldn&apos;t be a source of additional stress. You can unwind and
-          stop worrying about traffic and travel delays by letting S Chauffeur
-          airport transfer service handle all the hard work. All main airports
-          in and around London, such as Heathrow, Gatwick, Luton, City Airport,
-          Biggin Hill, and Stanstead, are served by our airport transfers. We
-          also arrange you transportation to any private airport. In addition to
-          keeping you updated on the best route to take to reach your
-          destination and the estimated time of arrival, we may set up several
-          pick-up points. With the use of BAA in-car updates, our chauffeur
-          closely monitors flight times and modifies the itinerary as needed.
+          also arrange you transportation to any private airport such as TAG
+          Farnborough Airport, Harrods Aviation Luton, Signature Airport Luton,
+          Harrods Aviation Stansted. In addition to keeping you updated on the
+          best route to take to reach your destination and the estimated time of
+          arrival, we may set up several pick-up points. With the use of BAA
+          in-car updates, our chauffeur closely monitors flight times and
+          modifies the itinerary as needed.
         </p>
       </div>
     </div>
