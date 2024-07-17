@@ -48,7 +48,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className='footer__field-container'>
+      {/* <div className='footer__field-container'>
         <h4 className='footer__title'>Address</h4>
         <div className='footer__address'>
           <div className='footer__icon'>
@@ -66,7 +66,7 @@ const Footer = () => {
             Location
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
