@@ -1,8 +1,8 @@
 // CHAUFFEUR
 export const logo = '/static/images/logo.png';
 export const car1 = '/static/images/car1.jpeg';
-export const car2 = '/static/images/car2.png';
-export const car3 = '/static/images/car3.png';
+export const car2 = '/static/images/car33.jpg';
+export const car3 = '/static/images/car3.jpeg';
 export const car4 = '/static/images/services4.jpeg';
 export const car5 = '/static/images/shaufferBanner.png';
 export const car6 = '/static/images/car6.jpg';
