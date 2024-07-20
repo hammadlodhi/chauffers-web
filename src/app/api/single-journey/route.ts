@@ -38,9 +38,9 @@ Email: ${email}
 Phone: ${phone}
 Pickup Address: ${pickup_address}
 Destination Address: ${destination_address}
-Hours of Waiting: ${hours_of_waiting}
-Return Pickup Address: ${return_pickup_address}
-Return Destination Address: ${return_destination_address}
+${hours_of_waiting ? `Hours of Waiting: ${hours_of_waiting}\n` : ""}
+${return_pickup_address ? `Return Pickup Address: ${return_pickup_address}\n` : ""}
+${return_destination_address ? `Return Destination Address: ${return_destination_address}\n` : ""}
 Car Type: ${car_type}
 Journey Type: ${journey_type}
 Date: ${pickup_time}

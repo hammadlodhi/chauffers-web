@@ -137,11 +137,11 @@ const CarBooking = () => {
             <option value="" disabled selected>
               Select your car type
             </option>
-            <option value="1">Mercedes S-Class</option>
-            <option value="2">Mercedes V-Class</option>
-            <option value="4">Range Rover</option>
-            <option value="4">Bentley</option>
-            <option value="3">Rolls Royce Phantom</option>
+            <option value="Mercedes S-Class">Mercedes S-Class</option>
+            <option value="Mercedes V-Class">Mercedes V-Class</option>
+            <option value="Range Rover">Range Rover</option>
+            <option value="Bentley">Bentley</option>
+            <option value="Rolls Royce Phantom">Rolls Royce Phantom</option>
           </select>
           <ErrorMessage text={errors.car_type?.message} />
           <label htmlFor="pickup_address">Pickup address</label>
