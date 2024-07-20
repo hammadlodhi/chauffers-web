@@ -16,14 +16,14 @@ interface IBookCarInput {
   phone: string;
   pickup_address: string;
   destination_address: string;
-  hours_of_waiting: number;
+  hours_of_waiting?: number;
   return_pickup_address?: string;
   return_destination_address?: string;
   car_type: string;
-  journey_type: string;
-  pickup_time: string;
-  destination_time: string;
-  description: string;
+  journey_type?: string;
+  pickup_time?: string;
+  destination_time?: string;
+  description?: string;
 }
 
 const CarBooking = () => {
@@ -188,9 +188,7 @@ const CarBooking = () => {
           <RadioGroup
             row
             aria-labelledby="demo-row-radio-buttons-group-label"
-            {...register("journey_type", {
-              required: "Journey type is required",
-            })}
+            {...register("journey_type")}
             onChange={handleJourneyTypeChange}
           >
             <FormControlLabel
@@ -242,17 +240,13 @@ const CarBooking = () => {
           <label htmlFor="pickup_time">Time to pickup</label>
           <input
             type="datetime-local"
-            {...register("pickup_time", {
-              required: "Pickup time is required",
-            })}
+            {...register("pickup_time")}
           />
           <ErrorMessage text={errors.pickup_time?.message} />
           <label htmlFor="destination_time">Time to dropoff</label>
           <input
             type="datetime-local"
-            {...register("destination_time", {
-              required: "Dropoff time is required",
-            })}
+            {...register("destination_time")}
           />
           <ErrorMessage text={errors.destination_time?.message} />
           <label htmlFor="description">Description</label>
