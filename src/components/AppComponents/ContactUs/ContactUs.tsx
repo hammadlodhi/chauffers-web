@@ -28,7 +28,7 @@ const ContactUs = () => {
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     try {
       const response = await axios.post(
-        "http://schauffeur.com/api/send-email",
+        "https://schauffeur.com/api/send-email",
         data
       );
       console.log(response.data);

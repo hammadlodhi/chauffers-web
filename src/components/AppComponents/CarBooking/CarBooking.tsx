@@ -59,7 +59,7 @@ const CarBooking = () => {
   const onSubmit: SubmitHandler<IBookCarInput> = async (data) => {
     try {
       const response = await axios.post(
-        "http://schauffeur.com/api/single-journey",
+        "https://schauffeur.com/api/single-journey",
         data
       );
       console.log(response.data);
