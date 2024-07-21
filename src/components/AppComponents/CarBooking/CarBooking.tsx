@@ -55,7 +55,11 @@ const CarBooking = () => {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm<IBookCarInput>();
+  } = useForm<IBookCarInput>({
+    defaultValues: {
+      journey_type: "Single Journey",
+    },
+  });
   const onSubmit: SubmitHandler<IBookCarInput> = async (data) => {
     try {
       const response = await axios.post(
@@ -185,37 +189,24 @@ const CarBooking = () => {
             </>
           )}
           <label htmlFor="journey_type">Journey type</label>
-          <RadioGroup
-            row
-            aria-labelledby="demo-row-radio-buttons-group-label"
-            {...register("journey_type")}
-            onChange={handleJourneyTypeChange}
-          >
-            <FormControlLabel
+          <div className="car-booking__journey-type">
+            <input
+              type="radio"
+              {...register("journey_type")}
               value="Single Journey"
-              control={
-                <Radio
-                  sx={{
-                    color: "#dac06c",
-                    "&.Mui-checked": { color: "#dac06c" },
-                  }}
-                />
-              }
-              label="Single Journey"
+              className="car-booking__radio"
+              onChange={handleJourneyTypeChange}
             />
-            <FormControlLabel
+            <label className="car-booking__radio-label" htmlFor="Single Journey">Single Journey</label>
+            <input
+              type="radio"
+              {...register("journey_type")}
               value="Return Journey"
-              control={
-                <Radio
-                  sx={{
-                    color: "#dac06c",
-                    "&.Mui-checked": { color: "#dac06c" },
-                  }}
-                />
-              }
-              label="Return Journey"
+              className="car-booking__radio"
+              onChange={handleJourneyTypeChange}
             />
-          </RadioGroup>
+            <label className="car-booking__radio-label" htmlFor="Return Journey">Return Journey</label>
+          </div>
           <ErrorMessage text={errors.journey_type?.message} />
           {returnJourneyType && (
             <>

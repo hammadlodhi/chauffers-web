@@ -38,14 +38,23 @@ Email: ${email}
 Phone: ${phone}
 Pickup Address: ${pickup_address}
 Destination Address: ${destination_address}
-${hours_of_waiting ? `Hours of Waiting: ${hours_of_waiting}\n` : ""}
-${return_pickup_address ? `Return Pickup Address: ${return_pickup_address}\n` : ""}
-${return_destination_address ? `Return Destination Address: ${return_destination_address}\n` : ""}
+${hours_of_waiting ? `Hours of Waiting: ${hours_of_waiting}` : ""}
+${
+  return_pickup_address ? `Return Pickup Address: ${return_pickup_address}` : ""
+}
+${
+  return_destination_address
+    ? `Return Destination Address: ${return_destination_address}`
+    : ""
+}
 Car Type: ${car_type}
 Journey Type: ${journey_type}
-Date: ${pickup_time}
-Time: ${destination_time}
-Description: ${description}`,
+${pickup_time ? `Date: ${pickup_time}` : ""}
+${destination_time ? `Time: ${destination_time}` : ""}
+${description ? `Description: ${description}` : ""}`
+      .split("\n")
+      .filter((line) => line.trim() !== "")
+      .join("\n"),
   };
 
   try {

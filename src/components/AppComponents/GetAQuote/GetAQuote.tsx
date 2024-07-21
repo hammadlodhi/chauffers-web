@@ -10,14 +10,6 @@ const GetAQuote = () => {
   const router = useRouter();
   return (
     <div className="layout-width get-a-quote">
-      {/* <div>
-        <img
-          width={1200}
-          src={cover}
-          alt=""
-          className="get-a-quote__responsive-image"
-        />
-      </div> */}
       <h1 className="regions mg-t-15 white">Get A Quote</h1>
       <hr />
       <div className="get-a-quote__img">
@@ -29,7 +21,6 @@ const GetAQuote = () => {
             }}
           >
             <img
-              // width={420}
               src={car9}
               alt=""
               className="get-a-quote__images"
@@ -45,7 +36,6 @@ const GetAQuote = () => {
             }}
           >
             <img
-              // width={420}
               src={cover}
               alt=""
               className="get-a-quote__img2 get-a-quote__images"

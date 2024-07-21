@@ -92,6 +92,23 @@
       width: 250px;
       padding: 20px;
     }
+    &__journey-type {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      width: 46%;
+    }
+    &__radio {
+      accent-color: #dac06c;
+      cursor: pointer;
+      transform: scale(0.8);
+      margin-right: 0.5rem;
+    }
+    &__radio-label {
+      font-size: 1rem;
+      margin-right: 1rem;
+      white-space: nowrap; 
+    }
     
     @include max(md) {
       flex-direction: column;
@@ -116,6 +133,12 @@
         width: auto;
         //   flex-wrap: wrap;
         //   align-items: center;
+      }
+      &__radio {
+        transform: scale(1.5);
+      }
+      &__radio-label {
+        font-size: 14px;
       }
     }
   }
