@@ -36,7 +36,7 @@ const HomePage = () => {
 
     let refreshInterval = setInterval(() => {
       next!.click();
-    }, 3000);
+    }, 4000);
 
     function reloadSlider() {
       if (slider) {
@@ -52,7 +52,7 @@ const HomePage = () => {
       clearInterval(refreshInterval);
       refreshInterval = setInterval(() => {
         next!.click();
-      }, 3000);
+      }, 4000);
     }
 
     dots.forEach((li, key) => {
