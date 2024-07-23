@@ -143,6 +143,7 @@ const CarBooking = () => {
             </option>
             <option value="Mercedes S-Class">Mercedes S-Class</option>
             <option value="Mercedes V-Class">Mercedes V-Class</option>
+            <option value="Mercedes E-Class">Mercedes E-Class</option>
             <option value="Range Rover">Range Rover</option>
             <option value="Bentley">Bentley</option>
             <option value="Rolls Royce Phantom">Rolls Royce Phantom</option>
